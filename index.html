@@ -1,1559 +1,1887 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
 
-<script>
+<head>
+	<meta name="google-site-verification" content="ErHpEcVWVWdSUggHhnQP17QFA_H2JioVZUo6Qnp54mE" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="shortcut icon" href="http://www.toyota.astra.co.id/livebeta/favicon.ico" />
 
-	var popup = 0;
+	<link rel="image_src" href="/imgs/layout/logo.jpg" />
 
-	var isclosed = 0;
+	<title>Home | PT. Toyota Astra Motor | Mobil Terbaik Keluarga Indonesia </title>
+	<meta name="description" content="Website resmi Toyota Indonesia. Mobil terbaik, irit, dengan pelayanan purna jual terbaik dan jaringan dealer dan bengkel terluas di Indonesia.">
+	<meta name="keywords" content="Mobil Keluarga Indonesia Terbaik, mobil hybrid terbaik, mobil commercial terbaik, mobil sedan terbaik, mobil suv terbaik, harga toyota terbaru, mobil baru terbaik, dealer mobil terbaik, kualitas parts terbaik, harga mobil terbaik">
+	<meta name="author" content="Toyota Astra Motor">
+	<meta name="publisher" content="www.toyota.astra.co.id">
+	<meta name="copyright" content="www.toyota.astra.co.id">
+	<meta name="host" content="www.toyota.astra.co.id">
+	<meta name="geo.position" content="-6.141536;106.890068">
+	<meta name="geo.region" content="GB">
+	<meta name="geo.placename" content="Jakarta, Indonesia">
+	<meta name="ICBM" content="-6.1415, 106.8900">
+	<meta name="DC.title" content="Home | Pt. Toyota Astra Motor | Mobil Terbaik Keluarga Indonesia ">
+	<meta property="og:title" content="Home | Pt. Toyota Astra Motor | Mobil Terbaik Keluarga Indonesia " />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.toyota.astra.co.id/" />
+	<meta property="og:site_name" content="Toyota Astra Motor" />
+	<meta property="og:description" content="Website resmi Toyota Indonesia. Mobil terbaik, irit, dengan pelayanan purna jual terbaik dan jaringan dealer dan bengkel terluas di Indonesia." />
+	<meta property="og:latitude" content="-6.1415">
+	<meta property="og:longitude" content="106.8900">
+	<link rel="alternate" type="application/rss+xml" title="Toyota Astra Motor Rss" href="http://www.toyota.astra.co.id/rss/">
 
+	<link href="/layout/style/style.css" rel="stylesheet" />
+	<link href="/layout/style/style_h.css" rel="stylesheet" />
+	<!--<link href="/layout/style/style-popup.css" rel="stylesheet" />-->
+	<style type="text/css">
+		@charset "utf-8";
+		body {
+			margin: 0 auto;
+		}
+
+		#wraper_popup {
+			background: url(images/bg_popup.png) no-repeat;
+			width: 365px;
+			height: 365px;
+			position: relative;
+			margin: 0 auto;
+			margin-top: 130px;
+			box-shadow: 0 0 10px #666666;
+			border-radius: 20px;
+		}
+
+		#button_close {
+			position: absolute;
+			right: -15px;
+			top: -15px;
+			cursor: pointer;
+		}
+
+		#title_popup {
+			font-size: 30px;
+			color: #FFF;
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+			text-transform: uppercase;
+			font-weight: bold;
+			padding-top: 32px;
+		}
+
+		#content_popup {
+			font-family: Arial, Helvetica, sans-serif;
+			padding: 10px;
+			padding-top: 40px;
+			font-weight: bold;
+			color: #333;
+			line-height: 20px;
+			font-size: 14px;
+		}
+
+		#content_popup a {
+			color: #F00;
+			text-decoration: none;
+		}
+	</style>
+	<link href="/layout/style/style_improvment.css?=1213123" rel="stylesheet" />
+	<style>
+		#wraper_popup {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			z-index: 99999;
+		}
+
+		#mask {
+			display: none;
+			background: #fff;
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: 10;
+			width: 100%;
+			height: 100%;
+			opacity: 0.8;
+			z-index: 999;
+		}
+	</style>
+	<script src="/layout/script/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="/layout/script/modernizr.custom.js" defer defer></script>
+	<script src="/layout/script/jquery-ui.min.js" defer defer></script>
+	<script type="text/javascript" src="/layout/script/jquery.jqtransform.js" defer defer></script>
+	<script language="javascript">
+		var app_id = "538184596213876";
+		$(document).ready(function() {
+			$('form.jqtransform,form.jqtransform_area,.jqtransform').jqTransform();
+			run_for_all();
+		});
+		var TIMEOUT = 900000;
+		//document.getElementsByName('google_conversion_frame')[0].style.display = "none";
 	</script>
-<!DOCTYPE html>
-<!--[if IE]><![endif]-->
-<!--[if lt IE 7 ]> <html lang="en" class="ie6">    <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="ie7">    <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<!--[if lt IE 7 ]><body class="ie6 oldie"><![endif]-->
+<!--[if IE 7 ]><body class="ie7 oldie"><![endif]-->
+<!--[if IE 8 ]><body class="ie8 oldie"><![endif]-->
+<!--[if IE 9 ]><body class="ie9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html class="no-js" lang="">
-    <head>
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>FOR MY FRIEND FITRI LUBIS</title>
 
-        <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
-        <meta name="author" content="SELAMAT TOYOTA SUKABUMI">
+<body>
+	<!--<![endif]-->
 
-        <meta name="keywords" content="Website resmi Toyota sukabumi, Alamat Toyota Sukabumi, ALAMAT SELAMAT TOYOTA SUKABUMI, Nomor Telepon Toyota Sukabumi, sales Toyota sukabumi, PRODUK TERBARU TOYOTA, Dp mobil murah, angsuran Terjangkau, Dp Ringan, Toyota Sukabumi, Selamat Toyota, dealer resmi toyota sukabumi, bengkel Toyota, dp murah angsuran terjangkau, TOYOTA CALYA, Promo Toyota Agya, Promo Toyota Etios, Promo Toyota Calya, Promo Toyota Avanza, Promo Toyota Veloz, Promo Toyota Veloz, Promo Toyota Sienta, Promo Toyota rush, Promo Toyota innova, Promo Nav 1, Promo Toyota yaris, Promo Toyota Fortuner, Promo Toyota Vios, Promo Toyota Altis, Promo Toyota Camry, Promo Toyota Aphard, Promo Toyota Vellfire, Promo Toyota Landcruiser, Promo Toyota Dyna, Promo Toyota Hiace, Promo Toyota FT 86, DP ringan, paket murah Toyota, harga Toyota, prace list Toyota, harga resmi toyota, Toyota sales Toyota sukabumi, aksesoris Toyota, suku cadang Toyota, mobil murah Toyota, program Toyota, sparepart Toyota, simulasi kredit Toyota, oli toyota," />
-        <meta name="description" content="Website resmi Toyota Sukabumi, Alamat Toyota Sukabumi, Produk terbaru Toyota Calya, Sienta, Promo Hebat Toyota, Agya, Yaris, Avanza, Innova, Rush, Fortuner, Altis, Camry, Dp mobil murah, angsuran terjangkau, Dp Ringan, Promo Toyota, Toyota Sukabumi, Selamat Toyota," />
-        <meta property="og:title" content="SELAMAT TOYOTA SUKABUMI | PROMO TOYOTA" />
-        <meta property="og:url" content="http://toyota-sukabumi.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="http://toyota-sukabumi.com/sdirmember/20343/logotoko/8syc4.jpg" />
-        <meta property="og:description" content="Website resmi Toyota Sukabumi, Alamat Toyota Sukabumi, Produk terbaru Toyota Calya, Sienta, Promo Hebat Toyota, Agya, Yaris, Avanza, Innova, Rush, Fortuner, Altis, Camry, Dp mobil murah, angsuran terjangkau, Dp Ringan, Promo Toyota, Toyota Sukabumi, Selamat Toyota," />
-        <!--LOGO-->
-        <link rel="shortcut icon" href="http://toyota-sukabumi.com/sdirmember/20343/logotoko/t3wg3.png">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://toyota-sukabumi.com/sdirmember/20343/logotoko/8syc4.jpg">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://toyota-sukabumi.com/sdirmember/20343/logotoko/8syc4.jpg">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://toyota-sukabumi.com/sdirmember/20343/logotoko/8syc4.jpg">
-		<meta name="language" content="id,en" />
-		<meta name="distribution" content="Global" />
-		<meta name="rating" content="General" />
-		<meta name="robots" content="index,follow" />
-		<meta name="googlebot" content="index,follow" />
-		<meta name="revisit-after" content="1 days" />
-		<meta name="expires" content="never" />
+	<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1002234256/?label=f_uBCLCC8QkQkMPz3QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+	<div id="fb-root"></div>
 
-		<!-- Mobile Metas -->
-		<link rel="canonical" href="http://toyota-sukabumi.com/"/>
 
-		<link rel="dns-prefetch" href="//www.facebook.com">
-		<link rel="dns-prefetch" href="//connect.facebook.net">
-		<link rel="dns-prefetch" href="//static.ak.facebook.com">
-		<link rel="dns-prefetch" href="//static.ak.fbcdn.net">
-		<link rel="dns-prefetch" href="//s-static.ak.facebook.com">
-		<link rel="dns-prefetch" href="//fonts.googleapis.com">
-		<link rel="dns-prefetch" href="//google-analytics.com">
-		<link rel="dns-prefetch" href="//www.google-analytics.com">
-		<link rel="dns-prefetch" href="//platform.twitter.com">
-		<link rel="dns-prefetch" href="//googletagmanager.com">
-		<link rel="dns-prefetch" href="http://webicdn.com">
-		<link rel="dns-prefetch" href="//img.youtube.com">
-        <!-- Fonts  -->
+	<!----------------- THANKS POP UP ------------------
+--------------------------------------------------->
+	<script>
+		// $(document).ready(function(){
+		// $ilmthanks = $(".ilm-page-thanks");
+		// if(window.location.hash == '#thanks')
+		// {
+		// $ilmthanks.show();
+		// $('.cassing-ilm-thanks .btn_close_thanks').click(function(){
+		// $(".ilm-page-thanks").hide();
+		// });
+		// }
 
-        <link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900,300" rel="stylesheet" type="text/css">
-        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
-
- 		<!-- CSS  -->
-
-		<!-- Bootstrap CSS
-		============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/bootstrap.min.css">
-
-        <!-- REVOLUTION BANNER CSS SETTINGS -->
-        <link rel="stylesheet" href="./template/agency6/rs-plugin/css/settings.css" media="screen" />
-
-		<!-- owl.carousel CSS
-		============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/owl.carousel.css">
-
-		<!-- owl.theme CSS
-		============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/owl.theme.css">
-
-		<!-- owl.transitions CSS
-		============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/owl.transitions.css">
-
-        <!-- jquery.sidr.dark CSS
-        ============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/jquery.sidr.dark.css">
-
-		<!-- font-awesome.min CSS
-		============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/font-awesome.min.css">
-
-        <!-- linea CSS
-        ============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/linea.css">
-
-        <!-- jquery.fancybox CSS
-        ============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/fancb/jquery.fancybox.css">
-
- 		<!-- animate CSS
-		============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/animate.css">
-
- 		<!-- normalize CSS
-		============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/normalize.css">
-
-        <!-- style CSS
-		============================================ -->
-		        <link rel="stylesheet" href="./template/agency6/css/style.css">
-
-        <!-- main CSS
-		============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/main.css">
-
-        <!-- responsive CSS
-		============================================ -->
-        <link rel="stylesheet" href="./template/agency6/css/responsive.css">
-
-        <script src="./template/agency6/js/vendor/modernizr-2.8.3.min.js"></script>
-
-		<!--Calendar Event-->
-		<link src="./librari/calendar/fullcalendar.css" rel="stylesheet" />
-		<link src="./librari/calendar/fullcalendar.print.css" rel="stylesheet" media="print" />
-				<!--Google Analytics Script-->
-
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-77178855-1', 'toyota-sukabumi.com');
-		  ga('create', 'UA-47471038-1', 'auto',{'name': 'newTracker'});
-		  ga('send', 'pageview');
-		  ga('newTracker.send', 'pageview');
+		// });
+	</script>
+	<div class='ilm-page-thanks' style='display:none;'>
+		<div class="cassing-ilm-thanks">
+			<div class="btn_close_thanks"></div>
+		</div>
+	</div>
+	<div class='ilm-page-thanks-pop' style='display:none;'>
+		<script type="text/javascript">
+			/* <![CDATA[ */
+			var google_conversion_id = 1002234256;
+			var google_conversion_language = "en";
+			var google_conversion_format = "3";
+			var google_conversion_color = "ffffff";
+			var google_conversion_label = "f_uBCLCC8QkQkMPz3QM";
+			var google_remarketing_only = false;
+			/* ]]> */
 		</script>
 
-		<!--End Google Analytics Script-->
+	</div>
 
+	<script language="javascript">
+		function openilm() {}
+	</script>
 
-				<meta name="google-site-verification" content="ZK54VD59-1yT0LTDTTo182fi9xJvCJe2i0KPCgz3aaI" />
-
-				<!--End Change Background Script-->
-    </head>	    <body>
-		<h1 class="hiddentitleheader">SELAMAT TOYOTA SUKABUMI</h1>
-		<h2 class="hiddentitleheader">Lets Go Beyond</h2>
-         <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <!-- Start header -->
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-5 col-sm-5 col-md-5">
-                        <div class="logo">
-                            <a href="http://toyota-sukabumi.com">
-								<img src="http://toyota-sukabumi.com/sdirmember/20343/logotoko/8syc4.jpg" alt="" class="height45">
-
-															</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 hidden-xs">
-                        <div class="header-search">
-                            <form method="post" action="http://toyota-sukabumi.com/cari">
-                                <span class="search-button"><i class="fa fa-search"></i></span>
-                                <input type="text" name="search" placeholder='Carti berita disini ...' required>
-                            </form>
-                        </div>
-                        						<div class="language-content">
-							<a class="language language-id" href="http://toyota-sukabumi.com/lang//?la=id" title="Indonesia"  id="lang-current" >
-								<img src="./template/agency6/img/language/indonesia.png"> <span>Indonesia</span>
-							</a>
-							<a class="language language-en" href="http://toyota-sukabumi.com/lang//?la=en" title="English" >
-								<img src="./template/agency6/img/language/english.png"> <span>English</span>
-							</a>
+	<div class="wrap_header">
+		<div class="box_header">
+			<div class="header">
+				<a class="logo" href="http://www.toyota.astra.co.id"><img src="/css/images/logo.jpg" alt="" width="187" height="50" /></a>
+				<div class="box_secondary_menu">
+					<ul class="secondary_menu">
+						<li><a href="http://www.toyota.astra.co.id" title="" class='active'>Home</a></li>
+						<li><a href="/corporate-information/news-promo/" title="">News &amp; Promo</a></li>
+						<li><a href="/shopping-tools/dealer-service-locator/" title="">Dealer &amp; Workshop</a></li>
+						<li><a href="/shopping-tools/contact-us/" title="">Contact Us</a></li>
+						<li><a href="/price-list/" title="">Price List</a></li>
+					</ul>
+					<div class="area_search_box">
+						<div class="search_box">
+							<div class="search_area">
+								<form action="/search/" method="post" style="margin:0px; padding:0px;">
+									<input name="queryString" type="text" class="textform has_placeholder" autocomplete="off" value="" placeholder="Search" id="form-search" />
+									<div id="suggestions"></div>
+									<input type="submit" value="" class="btn_search" />
+								</form>
+							</div>
+							<a href="#" class="btn_show_search"></a>
 						</div>
-						                    </div>
-                    <div class="cart-and-search pull-right">
-                        <div class="col-xs-1 col-sm-1 col-md-1">
-                            <div class="side-menu-icon">
-                                <ul>
-                                    <li class="sb-open-left"><a id="right-menu" href="#right-menu"><i class="fa fa-bars"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- End header -->
-        <!-- Start sidr menu -->
-        <div id="sidr-right" class="sidr right displaynone">
-            <div class="side-search">
-                <div class="header-search">
-					 <form method="post" action="http://toyota-sukabumi.com/cari">
-						<span class="search-button"><i class="fa fa-search"></i></span>
-						<input type="text" placeholder='Carti berita disini ...'>
-					</form>
-                </div>
-            </div>
-            <div class="side-menu">
-                <nav>
-                    <ul>
-																		 <li class="hassubmenu"><a href="javascript:;">Sedan</a>
-                            <ul class="submenu uk-nav-sub">
-																									<li><a href="http://toyota-sukabumi.com/halaman/camry">Camry</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/corolla-altis">Corolla Altis</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/vios">Vios</a></li>
-								                                                            </ul>
-                        </li>
-																								 <li class="hassubmenu"><a href="javascript:;">Hatchback</a>
-                            <ul class="submenu uk-nav-sub">
-																									<li><a href="http://toyota-sukabumi.com/halaman/yaris">Yaris</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/etios-valco">Etios Valco</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/agya">Agya</a></li>
-								                                                            </ul>
-                        </li>
-																								 <li class="hassubmenu"><a href="javascript:;">MPV</a>
-                            <ul class="submenu uk-nav-sub">
-																									<li><a href="http://toyota-sukabumi.com/halaman/calya">Calya</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/alphard">Alphard</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/vellfire">Vellfire</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/nav1">NAV1</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/all-new-kijang-innova">All New Kijang Innova</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/all-new-sienta">All New Sienta</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/veloz">Veloz</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/avanza">Avanza</a></li>
-								                                                            </ul>
-                        </li>
-																								 <li class="hassubmenu"><a href="javascript:;">SUV</a>
-                            <ul class="submenu uk-nav-sub">
-																									<li><a href="http://toyota-sukabumi.com/halaman/land-cruiser">Land Cruiser</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/all-new-fortuner">All New Fortuner</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/rush">Rush</a></li>
-								                                                            </ul>
-                        </li>
-																								 <li class="hassubmenu"><a href="javascript:;">Commercial</a>
-                            <ul class="submenu uk-nav-sub">
-																									<li><a href="http://toyota-sukabumi.com/halaman/hiace">Hiace</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/hilux-d-cab">Hilux D Cab</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/hilux-s-cab">Hilux S Cab</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/hilux-e-cab">Hilux E Cab</a></li>
-								                                																	<li><a href="http://toyota-sukabumi.com/halaman/dyna">Dyna</a></li>
-								                                                            </ul>
-                        </li>
-																								 <li class="hassubmenu"><a href="javascript:;">Sport</a>
-                            <ul class="submenu uk-nav-sub">
-																									<li><a href="http://toyota-sukabumi.com/halaman/toyota-86">Toyota 86</a></li>
-								                                                            </ul>
-                        </li>
-																								 <li class="hassubmenu"><a href="javascript:;">Hybrid</a>
-                            <ul class="submenu uk-nav-sub">
-																									<li><a href="http://toyota-sukabumi.com/halaman/camry-hybrid">Camry Hybrid\'</a></li>
-								                                                            </ul>
-                        </li>
-
-								<li class="">
-									<a href="http://toyota-sukabumi.com/kontak">Kontak Kami</a>
+						<div class="box_connect">
+							<a href="http://www.toyota.astra.co.id/connect/" target="_blank" class="btn_show_connect"></a>
+							<div class="connect" id="connect" style="display:none;">
+								<form class="connect_form" action="">
+									<p>Email</p>
+									<input type="text">
+									<p>Password</p>
+									<input type="password">
+									<p style="text-align:center; color:#ff9600; width:100%;">Forgot Password?</p>
+									<input type="submit" value="Sign In">
+								</form>
+								<p style="text-align:center; color:#ff9600; width:100%;">*Didn't have an account?</p>
+								<input type="submit" value="Sign Up">
+							</div>
+						</div>
+					</div>
+					<img src="/layout/style/images/merdeka70.jpg" alt="" class="merdeka" />
+				</div>
+			</div>
+			<!-- end .header -->
+			<div class="box_main_menu" id="box_main_menu">
+				<div class="menu_box">
+					<ul class="main_menu">
+						<li class="mn_car"><a href="#" title="" id="parent">SEDAN</a>
+							<div class="car_submenu create_fix show_hide">
+								<div class="sub_car_text rich_text">
+									<h1>SEDAN</h1>
+									<p>Mobil penumpang dengan kemewahan dan kemutakhiran teknologi terdepan.</p>
+								</div>
+								<ul class="sub_car_link">
+									<li>
+										<a href="/product/camry/" title="" id="parent_sub">
+											<img src="/imgs/files/car/THUMBNAIL-General- 140X87.png" width="140" alt="Camry" />
+											<span>Camry</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/camry/" title="Camry">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu-camry-update-2016_2.jpg" width="910" alt="Camry" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<a href="/product/corolla/" title="" id="parent_sub">
+											<img src="/imgs/files/car/altis.jpg" width="140" alt="Corolla Altis" />
+											<span>Corolla Altis</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/corolla/" title="Corolla Altis">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/image_menu_0E6187BE7A6B7E3CFBE86335A9634BF4.jpg" width="910" alt="Corolla Altis" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<a href="/product/all-new-vios/" title="" id="parent_sub">
+											<img src="/imgs/files/car/Thumbnail New Vios-2016.png" width="140" alt="Vios" />
+											<span>Vios</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/all-new-vios/" title="Vios">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu-910x283-vios-2016 2.jpg" width="910" alt="Vios" />
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mn_car"><a href="#" title="" id="parent">HATCHBACK</a>
+							<div class="car_submenu create_fix show_hide">
+								<div class="sub_car_text rich_text">
+									<h1>HATCHBACK</h1>
+									<p>Mobil-mobil mini yang lincah dan praktis, sesuai untuk kondisi kota.</p>
+								</div>
+								<ul class="sub_car_link">
+									<li>
+										<a href="/product/yaris-heykers/" title="" id="parent_sub">
+											<img src="/imgs/files/car/Thumbnail-Yaris-Heykers-140x80pxl-rev2.png" width="140" alt="Yaris Heykers" />
+											<span>Yaris Heykers</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/yaris-heykers/" title="Yaris Heykers">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/heykers-Image-Menu.jpg" width="910" alt="Yaris Heykers" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<a href="/product/all-new-yaris/" title="" id="parent_sub">
+											<img src="/imgs/files/car/Yaris TRD Thumbnail 140x87.png" width="140" alt="New Yaris" />
+											<span>New Yaris</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/all-new-yaris/" title="New Yaris">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu-910x283pxl-yaris-trd.jpg" width="910" alt="New Yaris" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<a href="/product/etios-valco/" title="" id="parent_sub">
+											<img src="/imgs/files/car/etiosthumbnail2.jpg" width="140" alt="Etios Valco" />
+											<span>Etios Valco</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/etios-valco/" title="Etios Valco">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Banner-Home-Kecil-10-Maret-2015.jpg" width="910" alt="Etios Valco" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<a href="/product/agya/" title="" id="parent_sub">
+											<img src="/imgs/files/car/agya.jpg" width="140" alt="Agya" />
+											<span>Agya</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/agya/" title="Agya">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/image_menu_7500B4FCA08C7E64180BD756928AB7A9.jpg" width="910" alt="Agya" />
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mn_car"><a href="#" title="" id="parent">MPV</a>
+							<div class="car_submenu create_fix show_hide">
+								<div class="sub_car_text rich_text">
+									<h1>MPV</h1>
+									<p>Alat transportasi andalan keluarga, memuat lebih banyak penumpang dan barang.</p>
+								</div>
+								<ul class="sub_car_link">
+									<li style="padding-left:0px;">
+										<a href="/product/alphard/" title="" id="parent_sub">
+											<img src="/imgs/files/car/Thumbnail- Alphard-2015.png" width="140" alt="Alphard" />
+											<span>Alphard</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/alphard/" title="Alphard">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu-Alphard-910x281-27032015.jpg" width="910" alt="Alphard" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li style="padding-left:0px;">
+										<a href="/product/vellfire/" title="" id="parent_sub">
+											<img src="/imgs/files/car/VellfireLimited-Thumbnail.png" width="140" alt="Vellfire" />
+											<span>Vellfire</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/vellfire/" title="Vellfire">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu-Vellfire-910x281-.jpg" width="910" alt="Vellfire" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li style="padding-left:0px;">
+										<a href="/product/new-nav1/" title="" id="parent_sub">
+											<img src="/imgs/files/car/nav1.jpg" width="140" alt="NAV1" />
+											<span>NAV1</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/new-nav1/" title="NAV1">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/image_menu_E20169C21D4EE53455ACECAB21BD782E.jpg" width="910" alt="NAV1" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li style="padding-left:0px;">
+										<a href="/product/kijang-innova/" title="" id="parent_sub">
+											<img src="/imgs/files/car/Thumbnail-140x87 2.png" width="140" alt="All New Kijang Innova" />
+											<span>All New Kijang Innova</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/kijang-innova/" title="All New Kijang Innova">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Innova Image Menu-910x283.jpg" width="910" alt="All New Kijang Innova" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li style="padding-left:0px;">
+										<a href="/product/sienta/" title="" id="parent_sub">
+											<img src="/imgs/files/car/thumbnail_140x87-sienta.png" width="140" alt="All New Sienta" />
+											<span>All New Sienta</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/sienta/" title="All New Sienta">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu-Sienta2016.jpg" width="910" alt="All New Sienta" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li style="padding-left:0px;">
+										<a href="/product/avanza-veloz/" title="" id="parent_sub">
+											<img src="/imgs/files/car/Thumbnail-140x87.png" width="140" alt="Veloz" />
+											<span>Veloz</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/avanza-veloz/" title="Veloz">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu-veloz-910x283-11082015.jpg" width="910" alt="Veloz" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li style="padding-left:0px;">
+										<a href="/product/avanza/" title="" id="parent_sub">
+											<img src="/imgs/files/car/AVANZA_thumbnail_140x87-12082015.png" width="140" alt="Avanza" />
+											<span>Avanza</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/avanza/" title="Avanza">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/AVANZA_Image_menu_910x283.jpg" width="910" alt="Avanza" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li style="padding-left:0px;">
+										<a href="/product/calya/" title="" id="parent_sub">
+											<img src="/imgs/files/car/Calya-Thumbnail.png" width="140" alt="Calya" />
+											<span>Calya</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/calya/" title="Calya">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Calya-Image-Menu.jpg" width="910" alt="Calya" />
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mn_car"><a href="#" title="" id="parent">SUV</a>
+							<div class="car_submenu create_fix show_hide">
+								<div class="sub_car_text rich_text">
+									<h1>SUV</h1>
+									<p>Efektif dalam mengangkut barang dan nyaman untuk membawa penumpang.</p>
+								</div>
+								<ul class="sub_car_link">
+									<li>
+										<a href="/product/land-cruiser/" title="" id="parent_sub">
+											<img src="/imgs/files/car/thumbnail.png" width="140" alt="Land Cruiser" />
+											<span>Land Cruiser</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/land-cruiser/" title="Land Cruiser">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu.jpg" width="910" alt="Land Cruiser" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<a href="/product/new-fortuner/" title="" id="parent_sub">
+											<img src="/imgs/files/car/Thumbnail-Avant-Garde.png" width="140" alt="All New Fortuner" />
+											<span>All New Fortuner</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/new-fortuner/" title="All New Fortuner">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu-14012016.jpg" width="910" alt="All New Fortuner" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<a href="/product/new-rush/" title="" id="parent_sub">
+											<img src="/imgs/files/car/thumbnail-rev.png" width="140" alt="Rush" />
+											<span>Rush</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/new-rush/" title="Rush">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu 2.jpg" width="910" alt="Rush" />
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mn_car"><a href="#" title="" id="parent">COMMERCIAL</a>
+							<div class="car_submenu create_fix show_hide">
+								<div class="sub_car_text rich_text">
+									<h1>COMMERCIAL</h1>
+									<p>Performa dan kehandalan yang sangat layak untuk menopang kegiatan perekonomian.</p>
+								</div>
+								<ul class="sub_car_link">
+									<li style="padding-left:0px;">
+										<a href="/product/hiace/" title="" id="parent_sub">
+											<img src="/imgs/files/car/hiace.jpg" width="140" alt="Hiace" />
+											<span>Hiace</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/hiace/" title="Hiace">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/image_menu_08AAA2FC3F2A28C77E026BF705232CCC.jpg" width="910" alt="Hiace" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li style="padding-left:0px;">
+										<a href="/product/hilux-d-cab/" title="" id="parent_sub">
+											<img src="/imgs/files/car/hilux_thumbnail_140x87.png" width="140" alt="Hilux D Cab" />
+											<span>Hilux D Cab</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/hilux-d-cab/" title="Hilux D Cab">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/hilux_image_menu_910x283.jpg" width="910" alt="Hilux D Cab" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li style="padding-left:0px;">
+										<a href="/product/hilux-s-cab/" title="" id="parent_sub">
+											<img src="/imgs/files/car/hiluxS_thumbnail-rev.png" width="140" alt="Hilux S Cab" />
+											<span>Hilux S Cab</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/hilux-s-cab/" title="Hilux S Cab">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/hiluxS_image_menu.jpg" width="910" alt="Hilux S Cab" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li style="padding-left:0px;">
+										<a href="/product/hilux-e-cab/" title="" id="parent_sub">
+											<img src="/imgs/files/car/thumbnail_140x87_hiluxextracabin.png" width="140" alt="Hilux E Cab" />
+											<span>Hilux E Cab</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/hilux-e-cab/" title="Hilux E Cab">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/image-menu-hilux-extra-cabin.jpg" width="910" alt="Hilux E Cab" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li style="padding-left:0px;">
+										<a href="/product/dyna/" title="" id="parent_sub">
+											<img src="/imgs/files/car/dyna.jpg" width="140" alt="Dyna" />
+											<span>Dyna</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mn_car"><a href="#" title="" id="parent">SPORT</a>
+							<div class="car_submenu create_fix show_hide">
+								<div class="sub_car_text rich_text">
+									<h1>SPORT</h1>
+									<p>Mobil yang bukan hanya alat transportasi, melainkan juga untuk tantangan dunia balap.</p>
+								</div>
+								<ul class="sub_car_link">
+									<li>
+										<a href="/product/toyota-86/" title="" id="parent_sub">
+											<img src="/imgs/files/car/Thumbnail-Toyota86.png" width="140" alt="Toyota 86 " />
+											<span>Toyota 86 </span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/toyota-86/" title="Toyota 86 ">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu-Toyota86.jpg" width="910" alt="Toyota 86 " />
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mn_car"><a href="#" title="" id="parent">HYBRID</a>
+							<div class="car_submenu create_fix show_hide">
+								<div class="sub_car_text rich_text">
+									<h1>HYBRID</h1>
+									<p>Menggabungkan sisi unggul dari dua sumber daya: motor listrik dan mesin pembakaran.</p>
+								</div>
+								<ul class="sub_car_link">
+									<li>
+										<a href="/product/camry-hybrid/" title="" id="parent_sub">
+											<img src="/imgs/files/car/camry-Thumbnail-2016.png" width="140" alt="Camry Hybrid" />
+											<span>Camry Hybrid</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/camry-hybrid/" title="Camry Hybrid">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/Image-Menu-camry-update-2016.jpg" width="910" alt="Camry Hybrid" />
+												</div>
+											</a>
+										</div>
+									</li>
+									<li>
+										<a href="/product/alphard-hybrid/" title="" id="parent_sub">
+											<img src="/imgs/files/car/thumbnail-alphard-hybrid.png" width="140" alt="Alphard Hybrid" />
+											<span>Alphard Hybrid</span>
+										</a>
+										<div class="sub_car_detail show_hide">
+											<a href="/product/alphard-hybrid/" title="Alphard Hybrid">
+												<div class="car_detail_box">
+													<span class="btn_explore_product">Explore</span>
+													<img src="/imgs/files/car/image-menu-alphard-hybrid.jpg" width="910" alt="Alphard Hybrid" />
+												</div>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mn_end"><a href="/product/concept-car/" title="" id="parent">CONCEPT CAR</a>
+					</ul>
+				</div>
+			</div>
+			<!-- end .main_menu -->
+			<div class="box_main_menu_res" id="box_main_menu_res">
+				<a href="#" title="" class="show_hide_car_menu"><span>Car Models</span></a>
+				<ul class="main_menu_res">
+					<li class="mn_car"><a href="#" title="" id="parent">SEDAN</a>
+						<div class="car_submenu create_fix show_hide">
+							<div class="sub_car_text rich_text">
+								<h1>SEDAN</h1>
+								<p>Mobil penumpang dengan kemewahan dan kemutakhiran teknologi terdepan.</p>
+							</div>
+							<ul class="sub_car_link">
+								<li>
+									<a href="/product/camry/" title="" id="parent_sub">
+										<img src="/imgs/files/car/THUMBNAIL-General- 140X87.png" width="140" alt="Camry" />
+										<span>Camry</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/camry/" title="Camry">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu-camry-update-2016_2.jpg" width="910" alt="Camry" />
+											</div>
+										</a>
+									</div>
 								</li>
-
-								<li class="">
-									<a href="http://toyota-sukabumi.com/halaman/price-list">Price List</a>
+								<li>
+									<a href="/product/corolla/" title="" id="parent_sub">
+										<img src="/imgs/files/car/altis.jpg" width="140" alt="Corolla Altis" />
+										<span>Corolla Altis</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/corolla/" title="Corolla Altis">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/image_menu_0E6187BE7A6B7E3CFBE86335A9634BF4.jpg" width="910" alt="Corolla Altis" />
+											</div>
+										</a>
+									</div>
 								</li>
-
-								<li class="">
-									<a href="http://toyota-sukabumi.com/event">Event</a>
+								<li>
+									<a href="/product/all-new-vios/" title="" id="parent_sub">
+										<img src="/imgs/files/car/Thumbnail New Vios-2016.png" width="140" alt="Vios" />
+										<span>Vios</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/all-new-vios/" title="Vios">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu-910x283-vios-2016 2.jpg" width="910" alt="Vios" />
+											</div>
+										</a>
+									</div>
 								</li>
-
-								<li class="">
-									<a href="http://toyota-sukabumi.com/halaman/persyaratan-kredit">Persyaratan Kredit</a>
+							</ul>
+						</div>
+					</li>
+					<li class="mn_car"><a href="#" title="" id="parent">HATCHBACK</a>
+						<div class="car_submenu create_fix show_hide">
+							<div class="sub_car_text rich_text">
+								<h1>HATCHBACK</h1>
+								<p>Mobil-mobil mini yang lincah dan praktis, sesuai untuk kondisi kota.</p>
+							</div>
+							<ul class="sub_car_link">
+								<li>
+									<a href="/product/yaris-heykers/" title="" id="parent_sub">
+										<img src="/imgs/files/car/Thumbnail-Yaris-Heykers-140x80pxl-rev2.png" width="140" alt="Yaris Heykers" />
+										<span>Yaris Heykers</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/yaris-heykers/" title="Yaris Heykers">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/heykers-Image-Menu.jpg" width="910" alt="Yaris Heykers" />
+											</div>
+										</a>
+									</div>
 								</li>
-
-								<li class="">
-									<a href="http://toyota-sukabumi.com/testimonial">Testimonial</a>
+								<li>
+									<a href="/product/all-new-yaris/" title="" id="parent_sub">
+										<img src="/imgs/files/car/Yaris TRD Thumbnail 140x87.png" width="140" alt="New Yaris" />
+										<span>New Yaris</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/all-new-yaris/" title="New Yaris">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu-910x283pxl-yaris-trd.jpg" width="910" alt="New Yaris" />
+											</div>
+										</a>
+									</div>
 								</li>
-																			                    </ul>
-                </nav>
-            </div>
-        </div>
-        <!-- End sidr menu -->
-		 <!-- Start main menu -->
-        <div class="main-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="menu">
-                        <nav>
-                            <ul>
-                                								                                <li><a href="javascript:;">Sedan</a>
-                                    <div class="one-collam-menu">
-                                        <div class="mega-menu">
-                                            <ul>
-																																						<li><a href="http://toyota-sukabumi.com/halaman/camry">Camry</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/corolla-altis">Corolla Altis</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/vios">Vios</a></li>
+								<li>
+									<a href="/product/etios-valco/" title="" id="parent_sub">
+										<img src="/imgs/files/car/etiosthumbnail2.jpg" width="140" alt="Etios Valco" />
+										<span>Etios Valco</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/etios-valco/" title="Etios Valco">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Banner-Home-Kecil-10-Maret-2015.jpg" width="910" alt="Etios Valco" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="/product/agya/" title="" id="parent_sub">
+										<img src="/imgs/files/car/agya.jpg" width="140" alt="Agya" />
+										<span>Agya</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/agya/" title="Agya">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/image_menu_7500B4FCA08C7E64180BD756928AB7A9.jpg" width="910" alt="Agya" />
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="mn_car"><a href="#" title="" id="parent">MPV</a>
+						<div class="car_submenu create_fix show_hide">
+							<div class="sub_car_text rich_text">
+								<h1>MPV</h1>
+								<p>Alat transportasi andalan keluarga, memuat lebih banyak penumpang dan barang.</p>
+							</div>
+							<ul class="sub_car_link">
+								<li style="padding-left:0px;">
+									<a href="/product/alphard/" title="" id="parent_sub">
+										<img src="/imgs/files/car/Thumbnail- Alphard-2015.png" width="140" alt="Alphard" />
+										<span>Alphard</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/alphard/" title="Alphard">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu-Alphard-910x281-27032015.jpg" width="910" alt="Alphard" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li style="padding-left:0px;">
+									<a href="/product/vellfire/" title="" id="parent_sub">
+										<img src="/imgs/files/car/VellfireLimited-Thumbnail.png" width="140" alt="Vellfire" />
+										<span>Vellfire</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/vellfire/" title="Vellfire">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu-Vellfire-910x281-.jpg" width="910" alt="Vellfire" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li style="padding-left:0px;">
+									<a href="/product/new-nav1/" title="" id="parent_sub">
+										<img src="/imgs/files/car/nav1.jpg" width="140" alt="NAV1" />
+										<span>NAV1</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/new-nav1/" title="NAV1">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/image_menu_E20169C21D4EE53455ACECAB21BD782E.jpg" width="910" alt="NAV1" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li style="padding-left:0px;">
+									<a href="/product/kijang-innova/" title="" id="parent_sub">
+										<img src="/imgs/files/car/Thumbnail-140x87 2.png" width="140" alt="All New Kijang Innova" />
+										<span>All New Kijang Innova</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/kijang-innova/" title="All New Kijang Innova">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Innova Image Menu-910x283.jpg" width="910" alt="All New Kijang Innova" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li style="padding-left:0px;">
+									<a href="/product/sienta/" title="" id="parent_sub">
+										<img src="/imgs/files/car/thumbnail_140x87-sienta.png" width="140" alt="All New Sienta" />
+										<span>All New Sienta</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/sienta/" title="All New Sienta">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu-Sienta2016.jpg" width="910" alt="All New Sienta" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li style="padding-left:0px;">
+									<a href="/product/avanza-veloz/" title="" id="parent_sub">
+										<img src="/imgs/files/car/Thumbnail-140x87.png" width="140" alt="Veloz" />
+										<span>Veloz</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/avanza-veloz/" title="Veloz">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu-veloz-910x283-11082015.jpg" width="910" alt="Veloz" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li style="padding-left:0px;">
+									<a href="/product/avanza/" title="" id="parent_sub">
+										<img src="/imgs/files/car/AVANZA_thumbnail_140x87-12082015.png" width="140" alt="Avanza" />
+										<span>Avanza</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/avanza/" title="Avanza">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/AVANZA_Image_menu_910x283.jpg" width="910" alt="Avanza" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li style="padding-left:0px;">
+									<a href="/product/calya/" title="" id="parent_sub">
+										<img src="/imgs/files/car/Calya-Thumbnail.png" width="140" alt="Calya" />
+										<span>Calya</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/calya/" title="Calya">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Calya-Image-Menu.jpg" width="910" alt="Calya" />
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="mn_car"><a href="#" title="" id="parent">SUV</a>
+						<div class="car_submenu create_fix show_hide">
+							<div class="sub_car_text rich_text">
+								<h1>SUV</h1>
+								<p>Efektif dalam mengangkut barang dan nyaman untuk membawa penumpang.</p>
+							</div>
+							<ul class="sub_car_link">
+								<li>
+									<a href="/product/land-cruiser/" title="" id="parent_sub">
+										<img src="/imgs/files/car/thumbnail.png" width="140" alt="Land Cruiser" />
+										<span>Land Cruiser</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/land-cruiser/" title="Land Cruiser">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu.jpg" width="910" alt="Land Cruiser" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="/product/new-fortuner/" title="" id="parent_sub">
+										<img src="/imgs/files/car/Thumbnail-Avant-Garde.png" width="140" alt="All New Fortuner" />
+										<span>All New Fortuner</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/new-fortuner/" title="All New Fortuner">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu-14012016.jpg" width="910" alt="All New Fortuner" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="/product/new-rush/" title="" id="parent_sub">
+										<img src="/imgs/files/car/thumbnail-rev.png" width="140" alt="Rush" />
+										<span>Rush</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/new-rush/" title="Rush">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu 2.jpg" width="910" alt="Rush" />
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="mn_car"><a href="#" title="" id="parent">COMMERCIAL</a>
+						<div class="car_submenu create_fix show_hide">
+							<div class="sub_car_text rich_text">
+								<h1>COMMERCIAL</h1>
+								<p>Performa dan kehandalan yang sangat layak untuk menopang kegiatan perekonomian.</p>
+							</div>
+							<ul class="sub_car_link">
+								<li style="padding-left:0px;">
+									<a href="/product/hiace/" title="" id="parent_sub">
+										<img src="/imgs/files/car/hiace.jpg" width="140" alt="Hiace" />
+										<span>Hiace</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/hiace/" title="Hiace">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/image_menu_08AAA2FC3F2A28C77E026BF705232CCC.jpg" width="910" alt="Hiace" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li style="padding-left:0px;">
+									<a href="/product/hilux-d-cab/" title="" id="parent_sub">
+										<img src="/imgs/files/car/hilux_thumbnail_140x87.png" width="140" alt="Hilux D Cab" />
+										<span>Hilux D Cab</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/hilux-d-cab/" title="Hilux D Cab">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/hilux_image_menu_910x283.jpg" width="910" alt="Hilux D Cab" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li style="padding-left:0px;">
+									<a href="/product/hilux-s-cab/" title="" id="parent_sub">
+										<img src="/imgs/files/car/hiluxS_thumbnail-rev.png" width="140" alt="Hilux S Cab" />
+										<span>Hilux S Cab</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/hilux-s-cab/" title="Hilux S Cab">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/hiluxS_image_menu.jpg" width="910" alt="Hilux S Cab" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li style="padding-left:0px;">
+									<a href="/product/hilux-e-cab/" title="" id="parent_sub">
+										<img src="/imgs/files/car/thumbnail_140x87_hiluxextracabin.png" width="140" alt="Hilux E Cab" />
+										<span>Hilux E Cab</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/hilux-e-cab/" title="Hilux E Cab">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/image-menu-hilux-extra-cabin.jpg" width="910" alt="Hilux E Cab" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li style="padding-left:0px;">
+									<a href="/product/dyna/" title="" id="parent_sub">
+										<img src="/imgs/files/car/dyna.jpg" width="140" alt="Dyna" />
+										<span>Dyna</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="mn_car"><a href="#" title="" id="parent">SPORT</a>
+						<div class="car_submenu create_fix show_hide">
+							<div class="sub_car_text rich_text">
+								<h1>SPORT</h1>
+								<p>Mobil yang bukan hanya alat transportasi, melainkan juga untuk tantangan dunia balap.</p>
+							</div>
+							<ul class="sub_car_link">
+								<li>
+									<a href="/product/toyota-86/" title="" id="parent_sub">
+										<img src="/imgs/files/car/Thumbnail-Toyota86.png" width="140" alt="Toyota 86 " />
+										<span>Toyota 86 </span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/toyota-86/" title="Toyota 86 ">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu-Toyota86.jpg" width="910" alt="Toyota 86 " />
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="mn_car"><a href="#" title="" id="parent">HYBRID</a>
+						<div class="car_submenu create_fix show_hide">
+							<div class="sub_car_text rich_text">
+								<h1>HYBRID</h1>
+								<p>Menggabungkan sisi unggul dari dua sumber daya: motor listrik dan mesin pembakaran.</p>
+							</div>
+							<ul class="sub_car_link">
+								<li>
+									<a href="/product/camry-hybrid/" title="" id="parent_sub">
+										<img src="/imgs/files/car/camry-Thumbnail-2016.png" width="140" alt="Camry Hybrid" />
+										<span>Camry Hybrid</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/camry-hybrid/" title="Camry Hybrid">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/Image-Menu-camry-update-2016.jpg" width="910" alt="Camry Hybrid" />
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<a href="/product/alphard-hybrid/" title="" id="parent_sub">
+										<img src="/imgs/files/car/thumbnail-alphard-hybrid.png" width="140" alt="Alphard Hybrid" />
+										<span>Alphard Hybrid</span>
+									</a>
+									<div class="sub_car_detail show_hide">
+										<a href="/product/alphard-hybrid/" title="Alphard Hybrid">
+											<div class="car_detail_box">
+												<span class="btn_explore_product">Explore</span>
+												<img src="/imgs/files/car/image-menu-alphard-hybrid.jpg" width="910" alt="Alphard Hybrid" />
+											</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="mn_end"><a href="/product/concept-car/" title="" id="parent">CONCEPT CAR</a>
+				</ul>
+			</div>
+			<!-- end .box_main_menu_res -->
 
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                               																                                <li><a href="javascript:;">Hatchback</a>
-                                    <div class="one-collam-menu">
-                                        <div class="mega-menu">
-                                            <ul>
-																																						<li><a href="http://toyota-sukabumi.com/halaman/yaris">Yaris</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/etios-valco">Etios Valco</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/agya">Agya</a></li>
+		</div>
+		<!-- end .box_header -->
+	</div>
+	<!-- end .wrap_header -->
+	<div class="wrap_content">
+		<div class="box_slide">
+			<div class="fullwidthslide">
+				<ul>
+					<li data-transition="fade">
+						<a href="http://newsroom.toyota.co.jp/en/corolla50th/" target="blank" alt="" title=""><img src="/imgs/files/highlight_home/Banner-Menu-Cover-Home-1366x490pxl.jpg" alt="Corolla 50th Anniversarry" /></a>
+					</li>
+					<li data-transition="fade">
+						<a href="http://www.toyota.astra.co.id/tdcac/#Toyota%20Dream%20Car%20Art%20Contest" target="blank" alt="" title=""><img src="/imgs/files/highlight_home/TDCAC2016-1366x490 - Copy.jpg" alt="TDCAC 2017" /></a>
+					</li>
+					<li data-transition="fade">
+						<a href="http://www.toyota.astra.co.id/product/yaris-heykers/#color-3d" target="blank" alt="" title=""><img src="/imgs/files/highlight_home/heykers-Banner-Home.jpg" alt="Yaris Heykers - Dare To Thrill" /></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end .box_slide -->
+		<div class="slide_under_767_box">
+			<ul class="slide_under_767" id="slide_under_767">
+				<li>
+					<a href="" title=""></a>
+				</li>
+				<li>
+					<a href="" title=""></a>
+				</li>
+				<li>
+					<a href="" title=""></a>
+				</li>
+			</ul>
+			<!-- end .slide_under_767 -->
+			<div class="nav_cycle nav_slide_under_767" id='nav_slide_under_767'></div>
+		</div>
+		<!-- end .slide_under_767_box -->
+		<div class="bg_nav_slider"></div>
+		<div class="box_shortcut add_fix">
+			<div class="box_news">
+				<h1>LATEST  <span>NEWS</span></h1>
+				<div class='highlight_news_home'>
+					<div class='slide_banner'>
+						<ul id='cycle_banner'>
+							<li>
+								<a href='/corporate-information/news-promo/news/sienta-akan-diuji-oleh-warga-serpong/' title=''>
+									<div class='title_highlight'>
+										<p>Sienta Akan Diuji oleh Warga Serpong</p><span class='news_date'>06 Januari 2017</span></div>
+									<div class='img_highlight'><img src='/imgs/files/news/06012017_4_thumb.jpg' alt='' width="303" height="162" /></div>
+								</a>
+							</li>
+							<li>
+								<a href='/corporate-information/news-promo/news/paraguay-dan-dakar-2017-sebuah-perkenalan-yang-menantang/' title=''>
+									<div class='title_highlight'>
+										<p>Paraguay dan Dakar 2017: sebuah perkenalan yang menantang</p><span class='news_date'>06 Januari 2017</span></div>
+									<div class='img_highlight'><img src='/imgs/files/news/TGRSA Press Conference (2).jpg' alt='' width="5760" height="3840" /></div>
+								</a>
+							</li>
+							<li>
+								<a href='/corporate-information/news-promo/news/transmover-punya-suku-cadang-sangat-terjangkau/' title=''>
+									<div class='title_highlight'>
+										<p>Transmover Punya Suku Cadang Sangat Terjangkau</p><span class='news_date'>06 Januari 2017</span></div>
+									<div class='img_highlight'><img src='/imgs/files/news/06012017_2_thumb.jpg' alt='' width="303" height="162" /></div>
+								</a>
+							</li>
+							<li>
+								<a href='/corporate-information/news-promo/news/apa-saja-yang-membedakan-transmover-dengan-avanza/' title=''>
+									<div class='title_highlight'>
+										<p>Apa Saja yang Membedakan Transmover dengan Avanza</p><span class='news_date'>06 Januari 2017</span></div>
+									<div class='img_highlight'><img src='/imgs/files/news/06012017_1_thumb.jpg' alt='' width="303" height="162" /></div>
+								</a>
+							</li>
+						</ul>
+						<div class='pil_banner' id='pil_banner'>
+							<a href='/corporate-information/news-promo/news/sienta-akan-diuji-oleh-warga-serpong/' rel='1' class='active' title=''>
+								<p>Sienta Akan Diuji oleh Warga</p><span class='news_date'>06 Januari 2017</span></a>
+							<a href='/corporate-information/news-promo/news/paraguay-dan-dakar-2017-sebuah-perkenalan-yang-menantang/' rel='2' class='active' title=''>
+								<p>Paraguay dan Dakar 2017: sebuah</p><span class='news_date'>06 Januari 2017</span></a>
+							<a href='/corporate-information/news-promo/news/transmover-punya-suku-cadang-sangat-terjangkau/' rel='3' class='active' title=''>
+								<p>Transmover Punya Suku Cadang Sangat</p><span class='news_date'>06 Januari 2017</span></a>
+							<a href='/corporate-information/news-promo/news/apa-saja-yang-membedakan-transmover-dengan-avanza/' rel='4' class='active' title=''>
+								<p>Apa Saja yang Membedakan Transmover</p><span class='news_date'>06 Januari 2017</span></a>
+						</div>
+					</div>
+				</div>
+				<!-- /.highlight_news_home --><a href="/corporate-information/news-promo/" title="More Archives" class="view_archives">More Archives &raquo;</a>
+			</div>
+			<!-- end .box_news -->
+			<div class="shortcut_promo" id="promo_carousel">
+				<h1>HOT <span>PROMO</span></h1>
+				<div class="shadow_left"></div>
+				<div class="shadow_right"></div>
+				<ul class="jcarousel-skin-tango">
+					<li>
+						<a href="http://www.toyota.astra.co.id/corporate-information/news-promo/promo/toyota-safety-center/#promo" title="" class="promo_img">
+							<img src="/imgs/files/promo/Toyota-Safety-Center-299x252.jpg" width="299" height="252" alt="TOYOTA SAFETY CENTER" />
+						</a>
+						<div class="promo_caption">
+							TOYOTA SAFETY CENTER
+						</div>
+					</li>
 
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                               																                                <li><a href="javascript:;">MPV</a>
-                                    <div class="one-collam-menu">
-                                        <div class="mega-menu">
-                                            <ul>
-																																						<li><a href="http://toyota-sukabumi.com/halaman/calya">Calya</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/alphard">Alphard</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/vellfire">Vellfire</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/nav1">NAV1</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/all-new-kijang-innova">All New Kijang Innova</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/all-new-sienta">All New Sienta</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/veloz">Veloz</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/avanza">Avanza</a></li>
+				</ul>
+				<div class="list_promo_under767">
+					<div class="promo_under767">
+						<a href="/corporate-information/news-promo/promo/toyota-safety-center/" title="" class="promo_img">
+							<img src="/imgs/files/promo/Toyota-Safety-Center-299x252.jpg" width="299" height="252" alt="TOYOTA SAFETY CENTER" />
+						</a>
+						<div class="promo_caption">
+							TOYOTA SAFETY CENTER
+						</div>
+					</div>
 
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                               																                                <li><a href="javascript:;">SUV</a>
-                                    <div class="one-collam-menu">
-                                        <div class="mega-menu">
-                                            <ul>
-																																						<li><a href="http://toyota-sukabumi.com/halaman/land-cruiser">Land Cruiser</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/all-new-fortuner">All New Fortuner</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/rush">Rush</a></li>
+				</div>
+			</div>
+			<!-- end .shortcut_promo -->
+			<div class="promo_pannel_box promo_pannel_home add_fix">
+				<div class="link_other_tools add_fix">
+					<a href="/shopping-tools/dealer-service-locator/">PILIH <br>DEALER</a>
+					<a href="/shopping-tools/form-simulation-kredit/">CREDIT <br>SIMULATION</a>
+					<a href="/shopping-tools/booking-service/">BOOKING <br>SERVICE</a>
+				</div>
+			</div>
+		</div>
 
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                               																                                <li><a href="javascript:;">Commercial</a>
-                                    <div class="one-collam-menu">
-                                        <div class="mega-menu">
-                                            <ul>
-																																						<li><a href="http://toyota-sukabumi.com/halaman/hiace">Hiace</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/hilux-d-cab">Hilux D Cab</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/hilux-s-cab">Hilux S Cab</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/hilux-e-cab">Hilux E Cab</a></li>
-																																																			<li><a href="http://toyota-sukabumi.com/halaman/dyna">Dyna</a></li>
+	</div>
+	<!-- end .content -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			run_for_home();
+		});
+	</script>
 
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                               																                                <li><a href="javascript:;">Sport</a>
-                                    <div class="one-collam-menu">
-                                        <div class="mega-menu">
-                                            <ul>
-																																						<li><a href="http://toyota-sukabumi.com/halaman/toyota-86">Toyota 86</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                               																                                <li><a href="javascript:;">Hybrid</a>
-                                    <div class="one-collam-menu">
-                                        <div class="mega-menu">
-                                            <ul>
-																																						<li><a href="http://toyota-sukabumi.com/halaman/camry-hybrid">Camry Hybrid\'</a></li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-
-										<li class="">
-											<a href="http://toyota-sukabumi.com/kontak">Kontak Kami</a>
-										</li>
-
-										<li class="">
-											<a href="http://toyota-sukabumi.com/halaman/price-list">Price List</a>
-										</li>
-
-										<li class="">
-											<a href="http://toyota-sukabumi.com/event">Event</a>
-										</li>
-
-										<li class="">
-											<a href="http://toyota-sukabumi.com/halaman/persyaratan-kredit">Persyaratan Kredit</a>
-										</li>
-
-										<li class="">
-											<a href="http://toyota-sukabumi.com/testimonial">Testimonial</a>
-										</li>
-																									                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End main menu -->		        <!-- Start slider -->
-        <div class="slider">
-			<!-- Start Slider -->
-			<div id="slider">
-				<div class="fullwidthbanner1 tp-banner-container">
-					<div class="fullwidthbanner-1 tp-banner" >
+	<div class="wrap_footer footer_closed" id="wrap_footer">
+		<div class="shopping_tools_box">
+			<div id="shopping_tools" class="shopping_tools">
+				<div class="panel_top">&nbsp;</div>
+				<div class="panel_body">
+					<a id="button_shopping_tools" class="show_box" href="#" title=""></a>
+					<a id="button_shopping_tools_text" class="show_box_text" href="#" title=""></a>
+					<ul class="btn_shopping_tools_box">
+						<li>
+							<a href='/shopping-tools/form-simulation-kredit/' title="Credit Simulation"><img src="/imgs/files/shopping_tools/icon__0E2EF78BDCDE155AF0838B39AE9ACFAA.png" width='20' height='24' /></a>
+							<div class="link_title">Credit Simulation</div>
+						</li>
+						<li>
+							<a href='/shopping-tools/download-brochure/' title="E-Brochure"><img src="/imgs/files/shopping_tools/icon__A9E33269DAF0E20B3B7E37C2D2FED10C.png" width='20' height='24' /></a>
+							<div class="link_title">E-Brochure</div>
+						</li>
+						<li>
+							<a href='/shopping-tools/dealer-service-locator/' title="Dealer & Workshop"><img src="/imgs/files/shopping_tools/icon__ACF9D2202BF37AC9AA28F134180D256D.png" width='20' height='24' /></a>
+							<div class="link_title">Dealer & Workshop</div>
+						</li>
+						<li>
+							<a href='/shopping-tools/book-test-drive/' title="Book Test Drive"><img src="/imgs/files/shopping_tools/icon__EE5AE91C053A55BF413FB4C3C8241A0A.png" width='20' height='24' /></a>
+							<div class="link_title">Book Test Drive</div>
+						</li>
+						<li>
+							<a href='/shopping-tools/booking-service/' title="Booking Service"><img src="/imgs/files/shopping_tools/icon__CC0DE98591B7CF1AB15E9AD8D5A92762.png" width='20' height='24' /></a>
+							<div class="link_title">Booking Service</div>
+						</li>
+						<li>
+							<a href='/shopping-tools/car-comparison/' title="Car Comparison"><img src="/imgs/files/shopping_tools/icon__D94811F8A62B58DE669A7E3C4AAEF7BB.png" width='20' height='24' /></a>
+							<div class="link_title">Car Comparison</div>
+						</li>
+						<li>
+							<a href='/shopping-tools/konsultasi-pembelian/' title="Konsultasi Pembelian"><img src="/imgs/files/shopping_tools/icon__BEA14F368DE9F36C6946E3CCB1620372.png" width='20' height='24' /></a>
+							<div class="link_title">Konsultasi Pembelian</div>
+						</li>
+						<li>
+							<a href='/price-list/' title="Price List"><img src="/imgs/files/shopping_tools/icon__D54846B98B07A8371513758B9ED632EE.png" width='20' height='24' /></a>
+							<div class="link_title">Price List</div>
+						</li>
+					</ul>
+				</div>
+				<div class="panel_bottom">&nbsp;</div>
+			</div>
+		</div>
+		<div class="backtotop_box">
+			<div id="backtotop">
+				<a id="button_backtotop" href="#" title=""></a>
+			</div>
+		</div>
+		<!-- end .backtotop_box -->
+		<div class="box_other_menu">
+			<div class="bg_show_hide">
+				<a href="#" title="" class="btn_show" id="show_hide"></a>
+				<div id="scrollTeaser">
+					<div id="scrollTeaser-down2"></div>
+					<div id="tutup_panah"></div>
+				</div>
+			</div>
+			<div class="bg_show_hide_active"></div>
+			<div class="box_other_menu_link create_fix">
+				<div class="border"></div>
+				<ul class="other_menu_link">
+					<li>
 						<ul>
-														<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" onclick="location.href='http://toyota-sukabumi.com'" class="cursorpointer">
-								<!-- MAIN IMAGE -->
-								<img src="http://toyota-sukabumi.com/sdirmember/20343/slider/4n4dc.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-								<!-- LAYERS -->
-																															</li>
-														<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" onclick="location.href='http://toyota-sukabumi.com'" class="cursorpointer">
-								<!-- MAIN IMAGE -->
-								<img src="http://toyota-sukabumi.com/sdirmember/20343/slider/bfcf9.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-								<!-- LAYERS -->
-																															</li>
-														<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" onclick="location.href='http://toyota-sukabumi.com'" class="cursorpointer">
-								<!-- MAIN IMAGE -->
-								<img src="http://toyota-sukabumi.com/sdirmember/20343/slider/n23tw.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-								<!-- LAYERS -->
-																															</li>
-														<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" onclick="location.href='http://toyota-sukabumi.com'" class="cursorpointer">
-								<!-- MAIN IMAGE -->
-								<img src="http://toyota-sukabumi.com/sdirmember/20343/slider/hkvts.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-								<!-- LAYERS -->
-																															</li>
-														<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" onclick="location.href='http://toyota-sukabumi.com'" class="cursorpointer">
-								<!-- MAIN IMAGE -->
-								<img src="http://toyota-sukabumi.com/sdirmember/20343/slider/tdy3k.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-								<!-- LAYERS -->
-																															</li>
-														<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" onclick="location.href='http://toyota-sukabumi.com'" class="cursorpointer">
-								<!-- MAIN IMAGE -->
-								<img src="http://toyota-sukabumi.com/sdirmember/20343/slider/5bc79.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-								<!-- LAYERS -->
-																															</li>
-														<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" onclick="location.href='http://toyota-sukabumi.com'" class="cursorpointer">
-								<!-- MAIN IMAGE -->
-								<img src="http://toyota-sukabumi.com/sdirmember/20343/slider/gps7y.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-								<!-- LAYERS -->
-																															</li>
-													</ul>
-						<div class="tp-bannertimer"></div>
-					</div>
-				</div>
-			</div>
-			<!-- End Slider -->
-        </div>
-        <!-- End slider -->
-						<div class="team-member-area banner_bottom">
-			<div class="container">
-				<div class="row">
-					<div class="blog-post-area banner_slider ">
-
-							<div class="col-md-4 mb10">
-								<div class="portfolio-item">
-									<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/slider/2n86n.jpg')repeat-x;width: 100%; background-size: cover!important;">
-										<div class="portfolio-details">
-											<div class="portfolio-link">
-												<p>
-													<a class="link" href="http://toyota-sukabumi.webpraktis.com/formulir/view/440" target="_blank"><i class="fa fa-link"></i></a>
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-4 mb10">
-								<div class="portfolio-item">
-									<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/slider/bhpp5.jpg')repeat-x;width: 100%; background-size: cover!important;">
-										<div class="portfolio-details">
-											<div class="portfolio-link">
-												<p>
-													<a class="link" href="http://toyota-sukabumi.webpraktis.com/halaman/penawaran" target="_blank"><i class="fa fa-link"></i></a>
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-4 mb10">
-								<div class="portfolio-item">
-									<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/slider/wqkgt.jpg')repeat-x;width: 100%; background-size: cover!important;">
-										<div class="portfolio-details">
-											<div class="portfolio-link">
-												<p>
-													<a class="link" href="http://toyota-sukabumi.webpraktis.com/kontak" target="_blank"><i class="fa fa-link"></i></a>
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-																											</div>
-				</div>
+							<li class="parent"><a href="/shopping-tools/form-simulation-kredit/" title="">Shopping <span>Tools</span></a></li>
+							<li><a href="/shopping-tools/form-simulation-kredit/" title="Credit Simulation">Credit Simulation</a></li>
+							<li><a href="/shopping-tools/download-brochure/" title="E-Brochure">E-Brochure</a></li>
+							<!--<li><a href="#" title="">Insurance Simulation</a></li>-->
+							<li><a href="/shopping-tools/dealer-service-locator/" title="Dealer & Workshop">Dealer &amp; Workshop</a></li>
+							<li><a href="/shopping-tools/book-test-drive/" title="Book Test Drive">Book Test Drive</a></li>
+							<li><a href="/shopping-tools/booking-service/" title="Booking Service">Booking Service</a></li>
+							<li><a href="/shopping-tools/car-comparison/" title="Car Comparison">Car Comparison</a></li>
+							<!--<li><a href="#" title="">Special Offer</a></li>-->
+							<li><a href="/shopping-tools/konsultasi-pembelian/" title="Pre-Order Payment">Konsultasi Pembelian</a></li>
+							<li><a href="/shopping-tools/contact-us/" title="Contact Us">Contact Us</a></li>
+							<li><a href="/shopping-tools/faq/" title="FAQ">FAQ</a></li>
+							<li><a href="/shopping-tools/newsletter/" title="Newsletter">Newsletter</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="parent"><a href="/corporate-information/profile/" title="">Corporate <span>Information</span></a></li>
+							<li><a href="/corporate-information/profile/" title="profile">Profile</a></li>
+							<li><a href="/corporate-information/career/" title="career">Career</a></li>
+							<li><a href="/corporate-information/social-responsibility/" title="Social Responsibility">Social Responsibility</a></li>
+							<li><a href="/corporate-information/news-promo/" title="News & Promo">News &amp; Promo</a></li>
+							<!--<li><a href="//" title="IIMS 2014" >IIMS 2014</a></li>-->
+							<!--<li><a href="http://www.ecoyouthtoyota.com/" title="Eco Youth" target="_blank">Eco Youth</a></li>-->
+							<li><a href="/tdcac/" title="Toyota Dream Car Art Contest">TDCAC</a></li>
+							<li><a href='/corporate-information/toyota-exhibition/' title='Toyota Exhibition' class='active_corporate_information_toyota_exhibition'>Toyota Exhibition</a></li>
+							<li>
+								<a href='/corporate-information/toyota-let-s-go-beyond/' title='Toyota Let' s Go Beyond ' class='active_corporate_information_toyota_let_s_go_beyond '>Toyota Let's Go Beyond</a></li>
+							<li><a href='/corporate-information/giias-2016/' title='GIIAS 2016' class='active_corporate_information_giias_2016'>GIIAS 2016</a></li>
+							<li>
+								<a href="http://www.toyotaindonesiamanufacturing.co.id/toyota-berbagi" class="active_corporate_information_toyota_berbagi" title="Toyota Berbagi">Toyota Berbagi</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="parent"><a href="/ownership/" title="">Ownership</a></li>
+							<!--<li><a href="/ownership/" title="Profile True Friend" >Profile True Friend</a></li>-->
+							<!--<li><a href="/ownership/sales-program/" title="Sales Program" >Sales Program</a></li>-->
+							<li><a href="/ownership/#toyota-club" title="Toyota Owner Club">Toyota Owner Club</a></li>
+							<!--<li><a href="/ownership/#kids-corner" title="Kids Corner" >Kids Corner</a></li>-->
+							<!--<li><a href="/ownership/merchandise/" title="Merchandise" >Merchandise</a></li>-->
+							<li><a href="/ownership/#education-media" title="Education Media">Education Media</a></li>
+							<li><a href="/ownership/#owners-manual" title="Owners Manual">Owners Manual</a></li>
+							<li><a href="/ownership/video/" title="Video">Video</a></li>
+							<li><a href='/ownership/toyota-connect/' title='Toyota Connect' class='active_ownership_toyota_connect'>Toyota Connect</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="parent"><a href="/after-sales/warranty/" title="">After <span>Sales</span></a></li>
+							<li><a class="active-warranty" href="/after-sales/warranty/" title="">Warranty</a></li>
+							<li><a class="active-program" href="/after-sales/program/" title="">Program</a></li>
+							<li><a class="active-body-and-paint" href="/after-sales/body-and-paint/" title="">Body And Paint</a></li>
+							<li><a class="active-periodic-service" href="/after-sales/periodic-service/" title="">Periodic Service</a></li>
+							<li><a class="active-toyota-genuine-part" href="/after-sales/toyota-genuine-part/" title="">Toyota Genuine Part</a></li>
+							<li><a class="active-holiday-campaign" href="/after-sales/holiday-campaign/" title="">Holiday Campaign</a></li>
+							<li>
+								<a href="http://www.toyota.astra.co.id/ssc" class="active-special-services-campaign">Special Service Campaign</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="parent"><a href="/technology/engine/" title="">Technology</a></li>
+							<li><a class="active-engine" href="/technology/engine/" title="">Engine</a></li>
+							<li><a class="active-safety" href="/technology/safety/" title="">Safety</a></li>
+							<li><a class="active-comfort" href="/technology/comfort/" title="">Comfort</a></li>
+							<li><a class="active-hybrid" href="/technology/hybrid/" title="">Hybrid</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="parent"><a href="/pressroom/social-media/" title="Social Media" title="">Press <span>Room</span></a></li>
+							<!--<li><a href="/pressroom/fact-sheet/" title="Fact Sheet" >Fact Sheet</a></li>-->
+							<li><a href="/pressroom/social-media/" title="Social Media">Social Media</a></li>
+							<li><a href="/pressroom/siaran-pers/" title="Social Media">Press Release</a></li>
+							<li><a href="/pressroom/gallery/" title="Social Media">Gallery</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<li class="parent"><a href="/mobile-info/" title="Mobile Info">Mobile <span>Info</span></a></li>
+							<li><a rel="page1" href="/mobile-info/#toyota-teman-mudik" title="Toyota Teman Mudik">Toyota Teman Mudik</a></li>
+							<li><a rel="page2" href="/mobile-info/#responsive-web-design" title="Responsive Web Design">Responsive Web Design</a></li>
+							<li><a rel="page3" href="/mobile-info/#e-catalog" title="E-Catalog">E-Catalog</a></li>
+							<li><a rel="page4" href="/mobile-info/#toyota-move" title="Toyota Move">Toyota Move</a></li>
+							<li><a rel="page5" href="/mobile-info/#sms-898" title="SMS *898#">SMS *898#</a></li>
+							<li><a rel="page6" href="/mobile-info/#toyota-ar" title="Toyota AR">Toyota AR</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
 
-        <!-- Start blog area -->
-        <div class="team-member-area">
-			<div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-md-8">
-						<div class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12">
-								<div class="area-title mb50">
-									<h3>SELAMAT TOYOTA SUKABUMI</h3>
-									<h2>Berita Terbaru</h2>
-								</div>
+
+		<div class="mobile_footer_menu">
+			<ul class="mobile_footer_menu_link">
+				<li>
+					<ul>
+						<li class="parent">
+							<a href="/shopping-tools/form-simulation-kredit/" title="">Shopping <span>Tools</span></a>
+							<ul class="mobile_footer_menu_link_submenu">
+								<li><a href="/shopping-tools/form-simulation-kredit/" title="Credit Simulation">Credit Simulation</a></li>
+								<li><a href="/shopping-tools/download-brochure/" title="E-Brochure">E-Brochure</a></li>
+								<!--<li><a href="#" title="">Insurance Simulation</a></li>-->
+								<li><a href="/shopping-tools/dealer-service-locator/" title="Dealer & Workshop">Dealer &amp; Workshop</a></li>
+								<li><a href="/shopping-tools/book-test-drive/" title="Book Test Drive">Book Test Drive</a></li>
+								<li><a href="/shopping-tools/booking-service/" title="Booking Service">Booking Service</a></li>
+								<li><a href="/shopping-tools/car-comparison/" title="Car Comparison">Car Comparison</a></li>
+								<!--<li><a href="#" title="">Special Offer</a></li>-->
+								<li><a href="/shopping-tools/konsultasi-pembelian/" title="Pre-Order Payment">Client Visit Request</a></li>
+								<li><a href="/shopping-tools/contact-us/" title="Contact Us">Contact Us</a></li>
+								<li><a href="/shopping-tools/faq/" title="FAQ">FAQ</a></li>
+								<li><a href="/shopping-tools/newsletter/" title="Newsletter">Newsletter</a></li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="/corporate-information/profile/" title="">Corporate <span>Information</span></a>
+							<ul class="mobile_footer_menu_link_submenu">
+								<li><a href="/corporate-information/profile/" title="profile">Profile</a></li>
+								<li><a href="/corporate-information/career/" title="career">Career</a></li>
+								<li><a href="/corporate-information/social-responsibility/" title="Social Responsibility">Social Responsibility</a></li>
+								<li><a href="/corporate-information/news-promo/" title="News & Promo">News &amp; Promo</a></li>
+								<!--<li><a href="//" title="IIMS 2014" >IIMS 2014</a></li>-->
+								<li><a href="http://www.ecoyouthtoyota.com/" title="Eco Youth" target="_blank">Eco Youth</a></li>
+								<li><a href="/tdcac/" title="Toyota Dream Car Art Contest">TDCAC</a></li>
+								<li><a href='/corporate-information/toyota-exhibition/' title='Toyota Exhibition' class='active_corporate_information_toyota_exhibition'>Toyota Exhibition</a></li>
+								<li>
+									<a href='/corporate-information/toyota-let-s-go-beyond/' title='Toyota Let' s Go Beyond ' class='active_corporate_information_toyota_let_s_go_beyond '>Toyota Let's Go Beyond</a></li>
+								<li><a href='/corporate-information/giias-2016/' title='GIIAS 2016' class='active_corporate_information_giias_2016'>GIIAS 2016</a></li>
+								<li>
+									<a href="http://www.toyotaindonesiamanufacturing.co.id/toyota-berbagi" class="active_corporate_information_toyota_berbagi" title="Toyota Berbagi">Toyota Berbagi</a>
+								</li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="/ownership/" title="">Ownership</a>
+							<ul class="mobile_footer_menu_link_submenu">
+								<!--<li><a href="/ownership/" title="Profile True Friend" >Profile True Friend</a></li>-->
+								<!--<li><a href="/ownership/sales-program/" title="Sales Program" >Sales Program</a></li>-->
+								<li><a href="/ownership/#toyota-club" title="Toyota Owner Club">Toyota Owner Club</a></li>
+								<!--<li><a href="/ownership/#kids-corner" title="Kids Corner" >Kids Corner</a></li>-->
+								<!--<li><a href="/ownership/merchandise/" title="Merchandise" >Merchandise</a></li>-->
+								<li><a href="/ownership/#education-media" title="Education Media">Education Media</a></li>
+								<li><a href="/ownership/#owners-manual" title="Owners Manual">Owners Manual</a></li>
+								<li><a href="/ownership/video/" title="Video">Video</a></li>
+								<li><a href='/ownership/toyota-connect/' title='Toyota Connect' class='active_ownership_toyota_connect'>Toyota Connect</a></li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="/after-sales/warranty/" title="">After <span>Sales</span></a>
+							<ul class="mobile_footer_menu_link_submenu">
+								<li><a class="active-warranty" href="/after-sales/warranty/" title="">Warranty</a></li>
+								<li><a class="active-program" href="/after-sales/program/" title="">Program</a></li>
+								<li><a class="active-body-and-paint" href="/after-sales/body-and-paint/" title="">Body And Paint</a></li>
+								<li><a class="active-periodic-service" href="/after-sales/periodic-service/" title="">Periodic Service</a></li>
+								<li><a class="active-toyota-genuine-part" href="/after-sales/toyota-genuine-part/" title="">Toyota Genuine Part</a></li>
+								<li><a class="active-holiday-campaign" href="/after-sales/holiday-campaign/" title="">Holiday Campaign</a></li>
+								<li>
+									<a href="http://www.toyota.astra.co.id/ssc" class="active-special-services-campaign">Special Service Campaign</a>
+								</li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="/technology/engine/" title="">Technology</a>
+							<ul class="mobile_footer_menu_link_submenu">
+								<li><a class="active-engine" href="/technology/engine/" title="">Engine</a></li>
+								<li><a class="active-safety" href="/technology/safety/" title="">Safety</a></li>
+								<li><a class="active-comfort" href="/technology/comfort/" title="">Comfort</a></li>
+								<li><a class="active-hybrid" href="/technology/hybrid/" title="">Hybrid</a></li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="/pressroom/social-media/" title="Social Media" title="">Press <span>Room</span></a>
+							<ul class="mobile_footer_menu_link_submenu">
+								<li><a href="/pressroom/social-media/" title="Social Media">Social Media</a></li>
+								<li><a href="/pressroom/siaran-pers/" title="Social Media">Press Release</a></li>
+								<li><a href="/pressroom/gallery/" title="Social Media">Gallery</a></li>
+							</ul>
+						</li>
+						<li class="parent">
+							<a href="/mobile-info/" title="Mobile Info">Mobile <span>Info</span></a>
+							<ul class="mobile_footer_menu_link_submenu">
+								<li><a href="/mobile-info/#toyota-teman-mudik" title="Toyota Teman Mudik">Toyota Teman Mudik</a></li>
+								<li><a href="/mobile-info/#responsive-web-design" title="Responsive Web Design">Responsive Web Design</a></li>
+								<li><a href="/mobile-info/#e-catalog" title="E-Catalog">E-Catalog</a></li>
+								<li><a href="/mobile-info/#toyota-move" title="Toyota Move">Toyota Move</a></li>
+								<li><a href="/mobile-info/#sms-898" title="SMS *898#">SMS *898#</a></li>
+								<li><a href="/mobile-info/#toyota-ar" title="Toyota AR">Toyota AR</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- end .mobile_footer_menu -->
+
+
+
+
+		<div class="box_car_model">
+			<div class="box_car_model_link create_fix">
+				<h1>Toyota <span>Authorized Dealer</span></h1>
+				<a href="#" title="" class="show_hide_car_model"></a>
+				<ul class="car_model_link">
+					<li>
+						<div class="box_dealer_link">
+							<center>
+								<a href="http://www.hasjrat.co.id/" target="_blank"><img src="/imgs/files/dealer_link/hasjrat-abadi 2.png" width="177" height="70" /></a>
+							</center>
+							<br /><br />
+							<div style="text-align: center;">
+								<h2><a target='_blank' href="http://www.hasjrat.co.id/profil/2/tentang-perusahaan"><span style="color: #000000;">Profil</span></a><br /><br /></h2>
 							</div>
+							<div style="text-align: center;">
+								<h2><a target='_blank' href="http://www.hasjrat.co.id/jaringan"><span style="color: #000000;">Dealer</span></a></h2>
+							</div> <br /><br />
 						</div>
-						<div class="blog-post-area blog_home">
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/pj4qj.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-toyota-calya-23-12-2016-detail-40500.html">Delivery Toyota Calya 23-12-2016</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Jum'at, 23 Desember 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-toyota-calya-23-12-2016-detail-40500.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/pj4qj.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-toyota-calya-23-12-2016-detail-40500.html">Delivery Toyota Calya 23-12-2016</a></h3>
-										<p >Setelah sekian lama menimbang-nimbang beberapa varian dari Toyota, dengan berbagai fitur canggih dan juga harga yang sangat bersahabat, akhir nya pak Pupu dan keluarga sepakat untuk meminang Toyota New Calya. Selamat pak Pupu, atas kendaraan baru nya semoga semakin sukses karir nya juga sehat selalu..    Belanja di Selamat Toyota, murah meriah lagi[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-toyota-calya-23-12-2016-detail-40500.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/rrjt2.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-avanza-g-mt-17-12-2016-detail-39902.html">DELIVERY AVANZA G MT 17-12-2016</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Sabtu, 17 Desember 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-avanza-g-mt-17-12-2016-detail-39902.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/rrjt2.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-avanza-g-mt-17-12-2016-detail-39902.html">DELIVERY AVANZA G MT 17-12-2016</a></h3>
-										<p >  Di Sabtu pagi pak Endin sangat bersemangat sekali menanti kendaraan Toyota Avanza yang sudah di pesan nya, juga ini adalah pembelian yang ke dua kali nya di tahun 2016 ini. Selamat
- atas pembelian kendaraan Toyota Avanza nya Pak, kami tunggu pesanan-pesanan kendaraan Toyota selanjut nya. Semoga sukses selalu.    Belanja di Selamat Toyota, murah m[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-avanza-g-mt-17-12-2016-detail-39902.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/48gfq.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-rush-trd-17-12-2016-detail-39899.html">DELIVERY RUSH TRD 17-12-2016</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Sabtu, 17 Desember 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-rush-trd-17-12-2016-detail-39899.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/48gfq.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-rush-trd-17-12-2016-detail-39899.html">DELIVERY RUSH TRD 17-12-2016</a></h3>
-										<p >Kemudahan memesan kendaraan Toyota melalui website, sudah di alami juga sama pak Sigit Maulana.. terima kasih atas kepercayaan nya untuk membeli kendaraan Toyota Rush TRD nya di selamat Toyota Sukabumi. Semoga pak Sigit dan keluarga bertambah sukses dan selalu menjadi pelanggan setia Selamat Toyota.   Belanja di Selamat Toyota, murah meriah lagi mu[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-rush-trd-17-12-2016-detail-39899.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/t5hhp.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-calya-17-11-2016-detail-39640.html">Delivery Calya 17-11-2016</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Kamis, 15 Desember 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-calya-17-11-2016-detail-39640.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/t5hhp.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-calya-17-11-2016-detail-39640.html">Delivery Calya 17-11-2016</a></h3>
-										<p > Selamat Pak Jamaludin dan keluarga, atas kepemilikan kendaraan Toyota Calya nya, kendaraan yang sangat terjangkau juga irit bahan bakar ini mempunyai fitur yang canggih dan modern, karena sudah di lengkapi dengan sistem kunci yang cerdas yaitu Immobilizer. Semoga dengan pembelian kendaraan Toyota yang kedua ini, silaturohmi kita dapat lebih erat [...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-calya-17-11-2016-detail-39640.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/nzkfb.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-veloz-03-11-2016-detail-38014.html">Delivery Veloz 03-11-2016</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Kamis, 03 November 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-veloz-03-11-2016-detail-38014.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/nzkfb.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-veloz-03-11-2016-detail-38014.html">Delivery Veloz 03-11-2016</a></h3>
-										<p >Selamat untuk pak Fariz dan Istri atas kepemilikan kendaraan baru Toyota Veloz nya.. Walaupun pengiriman kendaraan ada sedikit keterlambatan, pak Faris adalah salah satu Cutomer setia Selamat Toyota yang royal. semoga kendaraan Veloz barunya lebih memudahkan segala aktifitas nya pak.   Belanja di Selamat Toyota, murah meriah lagi mudah proses nya..[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-veloz-03-11-2016-detail-38014.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/fkxkt.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-avanza-03-11-16-detail-38015.html">Delivery Avanza 03-11-16</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Kamis, 03 November 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-avanza-03-11-16-detail-38015.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/fkxkt.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-avanza-03-11-16-detail-38015.html">Delivery Avanza 03-11-16</a></h3>
-										<p >Dengan proses yang cepat dan lancar, hari kamis sore Toyota Avanza juga meluncur ke rumah nya bapak Iwa. Semoga dengan pelayanan yang maksimal, kedepan nya pun pak Iwa dapat menjadi pelanggan setia Selamat Toyota. Juga dapat memberikan referensi yang bagus.  Selamat untuk pak Iwa dan keluarga atas kepemilikan
-kendaraan baru Toyota Avanza nya.  Bel[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-avanza-03-11-16-detail-38015.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/bjg66.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/immobilizer-vs-smart-entry-keys-detail-37645.html">Immobilizer VS Smart entry keys</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Rabu, 26 Oktober 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Tekhnologi</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/immobilizer-vs-smart-entry-keys-detail-37645.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/bjg66.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/immobilizer-vs-smart-entry-keys-detail-37645.html">Immobilizer VS Smart entry keys</a></h3>
-										<p >    Salah satu fitur modern yang ada di kendaraan roda empat yaitu sistem kunci cerdas yang disebut Immobilizer dan Smart entry keys. Immobilizer ini biasanya dipakai pada mobil-mobil mewah untuk mencegah upaya kejahatan pencurian kendaraan. Perbedaan Immobilizer dan Smart entry key, keduanya memiliki kegunaan dan fungsi yang bervariasi : Immobiliz[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/immobilizer-vs-smart-entry-keys-detail-37645.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/svb9j.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-rush-15-10-2016-detail-37592.html">Delivery Rush 15-10-2016</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Sabtu, 15 Oktober 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-rush-15-10-2016-detail-37592.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/svb9j.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-rush-15-10-2016-detail-37592.html">Delivery Rush 15-10-2016</a></h3>
-										<p >Keluarga Pak Surahman pun dari Depok, tidak melewatkan kesempatan promo pembelian kendaraan Toyota di bulan Oktober ini. Hari sabtu siang satu unit Toyota Rush dari Selamat Toyota langsung meluncur di bawa pulang ke Depok. Selamat berpesta dengan Toyota Rush baru nya Pak, hati-hati di jalan selamat sampai tujuan..    Belanja di Selamat Toyota, mura[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-rush-15-10-2016-detail-37592.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/bxqs6.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/promo-toyota-detail-36974.html">PROMO TOYOTA</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Minggu, 09 Oktober 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Promo</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/promo-toyota-detail-36974.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/bxqs6.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/promo-toyota-detail-36974.html">PROMO TOYOTA</a></h3>
-										<p >Dapatkan Promo terbaik ini secepat nya, segera booking unit yang bapak/Ibu inginkan. Penawaran terbatas hanya di bulan Oktober, Dp terjangkau dan angsuran paling murah, serta full Allrisk untuk asuransi kendaraan..    Boking segera :  Okky Triansyah Winarya  0857 2004 9380 /WA  0813 1936 0680  0877 4133 3500            [...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/promo-toyota-detail-36974.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/khgwr.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-calya-07-10-2016-detail-36983.html">Delivery Calya 07-10-2016</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Jum'at, 07 Oktober 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-calya-07-10-2016-detail-36983.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/khgwr.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-calya-07-10-2016-detail-36983.html">Delivery Calya 07-10-2016</a></h3>
-										<p > Alhamdulillah.. Hari jumat sore Toyota New Calya juga telah meluncur ke garasi nya KH. Sopyan.. Pilihan terbaik untuk mobilitas keluarga selain bahan bakar nya irit juga harga nya sangat bersahabat. Selamat dan terima kasih untuk KH. Sopyan dan keluarga, atas kendaraan barunya.       Belanja di Selamat Toyota, murah meriah lagi mudah proses n[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-calya-07-10-2016-detail-36983.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/wxr7s.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-agya-28-09-2010-detail-36562.html">Delivery Agya 28-09-2010</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Rabu, 28 September 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-agya-28-09-2010-detail-36562.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/wxr7s.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-agya-28-09-2010-detail-36562.html">Delivery Agya 28-09-2010</a></h3>
-										<p > Selamat atas pembelian kendaraan Toyota Agya nya pak Endin, dan juga akan lebih memudahkan aktifitas istri bapak tercinta saat beraktifitas sehari-hari.. Toyota Agya selain hemat bahan bakar juga harga nya sangat terjangkau, dan pastinya sangat aman dan peraktis saat di kendarai di jalanan.         Belanja di Selamat Toyota, murah meriah lagi muda[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-agya-28-09-2010-detail-36562.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/zdknv.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-veloz-23-09-2016-detail-36111.html">Delivery Veloz 23-09-2016</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Jum'at, 23 September 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-veloz-23-09-2016-detail-36111.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/zdknv.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-veloz-23-09-2016-detail-36111.html">Delivery Veloz 23-09-2016</a></h3>
-										<p >Dan akhir nya Toyota Veloz 1.3 MT, juga di bawa pulang oleh Uda Zulkifli. Memang Veloz ini selain tampilan nya sangat Sporty, tentunya juga nyaman dan aman untuk keluarga.. terima kasih Uda Zul, semoga kendaraan baru nya lebih memudahkan segala aktifitas nya.   Belanja di Selamat Toyota, murah meriah lagi mudah proses nya.. Semoga berkah...    [...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-veloz-23-09-2016-detail-36111.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/rbcxg.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-avanza-21-09-2016-detail-36109.html">Delivery Avanza 21-09-2016</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Rabu, 21 September 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-avanza-21-09-2016-detail-36109.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/rbcxg.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-avanza-21-09-2016-detail-36109.html">Delivery Avanza 21-09-2016</a></h3>
-										<p >Alhamdulillah... Juga Bapak H. Sugandi, adalah salah satu pelanggan setia Toyota, dan ini merupakan pembelian kendaraan Toyota Avanza yang kedua kali nya. Selamat Pak Haji, semoga selalu dilancarkan juga di mudahkan rezeki nya. Amin..   Belanja di Selamat Toyota, murah meriah lagi mudah proses nya.. Semoga berkah...     [...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-avanza-21-09-2016-detail-36109.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/y86cc.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/penyebab-airbag-tidak-mengembang-detail-35821.html">Penyebab Airbag tidak mengembang</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Jum'at, 16 September 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Tips</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/penyebab-airbag-tidak-mengembang-detail-35821.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/y86cc.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/penyebab-airbag-tidak-mengembang-detail-35821.html">Penyebab Airbag tidak mengembang</a></h3>
-										<p >Penyebab Airbag Tidak Mengembang,
-Sudah menjadi rahasia umum bahwa kendaraan bermotor, termasuk mobil
-menjadi salah satu penyumbang terbesar yang mengakibatkan seseorang
-kehilangan nyawa. Hingga saat ini masih sering kita dengar kecelakaan
-yang melibatkan mobil dengan kendaraan lain. Oleh karena itu produsen
-mobil diharuskan melengkapi prod[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/penyebab-airbag-tidak-mengembang-detail-35821.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/h9hyq.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-new-rush-03-09-2016-detail-35123.html">Delivery New Rush 03-09-2016</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Sabtu, 03 September 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-new-rush-03-09-2016-detail-35123.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/h9hyq.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-new-rush-03-09-2016-detail-35123.html">Delivery New Rush 03-09-2016</a></h3>
-										<p >Pak Maman pun dari Cianjur sangat bersemangat untuk beli mobil impian nya di Selamat Toyota, Selamat Pak semoga kendaraan baru Toyota Rush nya lebih memudahkan segala aktifitas pekerjaan maupun saat bersama keluarga..   [...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-new-rush-03-09-2016-detail-35123.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/3svhq.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-new-sienta-29-08-16-detail-35122.html">Delivery New Sienta 29-08-16</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Senin, 29 Agustus 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-new-sienta-29-08-16-detail-35122.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/3svhq.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-new-sienta-29-08-16-detail-35122.html">Delivery New Sienta 29-08-16</a></h3>
-										<p >Dan juga Bapak Abdul Rojak, adalah pelanggan setia Selamat Toyota.. Selamat dan terima kasih atas pembelian kendaraan Toyota New Sienta nya, yang merupakan pembelian unit ke dua, semoga tambah sukses dan terus jaya pak. [...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-new-sienta-29-08-16-detail-35122.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/bfx3w.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-new-rush-15-08-2016-detail-32702.html">Delivery New Rush 15-08-2016</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Senin, 15 Agustus 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-new-rush-15-08-2016-detail-32702.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/bfx3w.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-new-rush-15-08-2016-detail-32702.html">Delivery New Rush 15-08-2016</a></h3>
-										<p >Mantaaaaap... Toyota New Rush siang tadi meluncur juga ke garasi nya pak
-Agung, juga merupakan pembelian mobil Toyota yg ketiga di tahun 2016
-ini. Selamat &amp; terima kasih pak Agung atas kepemilikan Toyota Rush
-nya.. Belanja di Selamat Toyota, murah meriah lagi mudah proses nya..
-Semoga berkah...[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-new-rush-15-08-2016-detail-32702.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/9wrr7.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-avanza-04-08-16-detail-31653.html">Delivery Avanza 04-08-16</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Kamis, 04 Agustus 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-avanza-04-08-16-detail-31653.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/9wrr7.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-avanza-04-08-16-detail-31653.html">Delivery Avanza 04-08-16</a></h3>
-										<p >Terima kasih Bos Ginanjar udah belanja Grand New Avanza di Selamat
-Toyota, murah meriah lagi mudah proses nya.. Selamat &amp; Sukses ya
-Bos..  [...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-avanza-04-08-16-detail-31653.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/zw83h.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/delivery-toyota-innova-02-08-16-detail-31365.html">Delivery Toyota Innova 02-08-16</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Selasa, 02 Agustus 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> Best Moment</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/delivery-toyota-innova-02-08-16-detail-31365.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/zw83h.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/delivery-toyota-innova-02-08-16-detail-31365.html">Delivery Toyota Innova 02-08-16</a></h3>
-										<p >Alhamdulillah... Selamat dan terima kasih, awal bulan yg baik di awali
-pengiriman unit Innova V  Matic Diesel untuk Pak H. Deni..  [...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/delivery-toyota-innova-02-08-16-detail-31365.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row mb40 blog_hover">
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="portfolio-item">
-										<div class="blog-one" style="background: url('http://toyota-sukabumi.com/sdirmember/20343/produk/4dw7v.jpg')repeat-x;width: 100%; background-size: cover!important;">
-											<div class="portfolio-details">
-												<div class="portfolio-title">
-													<h3><a href="http://toyota-sukabumi.com/harga-dan-spesifikasi-toyota-calya-detail-29475.html">Harga dan Spesifikasi Toyota Calya</a></h3>
-													<span class="comment"><a><i class="fa fa-calendar-o"></i> Rabu, 13 Juli 2016</a></span>
-													<span class="comment"><a><i class="fa fa-tags"></i> News</a></span>
-
-												</div>
-												<div class="portfolio-link">
-													<p><a class="link" href="http://toyota-sukabumi.com/harga-dan-spesifikasi-toyota-calya-detail-29475.html"><i class="fa fa-link"></i></a><a class="search fancybox" href="http://toyota-sukabumi.com/sdirmember/20343/produk/4dw7v.jpg" data-fancybox-group="gallery"><i class="fa fa-search"></i></a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
-									<div class="blog_content">
-										<h3><a href="http://toyota-sukabumi.com/harga-dan-spesifikasi-toyota-calya-detail-29475.html">Harga dan Spesifikasi Toyota Calya</a></h3>
-										<p >Toyota semakin mendominasi
-penjualan mobil di Indonesia, kini
-giliran mobil yang masuk dalam segmen Low Cost and Green Car (LCGC) tujuh penumpang yang akan diluncurkan oleh pabrikan otomotif
-asal Jepang ini, diberi
-nama TOYOTA CALYA. Kendaraan ini keseluruhannya dibuat di Indonesia dengan komponen
-lokal diatas 80 % dan dirancang serta dibuat o[...]</p>
-										<div class="feature-box">
-											<a class="readon small border" href="http://toyota-sukabumi.com/harga-dan-spesifikasi-toyota-calya-detail-29475.html">Selengkapnya</a>
-										</div>
-									</div>
-								</div>
-							</div>
-														<div class="row">
-								<div class="col-md-12">
-									<div class="feature-box redbox">
-										<a class="readon small border" href="http://toyota-sukabumi.com/artikel">Lihat Semua Artikel</a>
-									</div>
-								</div>
-							</div>
+					</li>
+					<li>
+						<div class="box_dealer_link">
+							<center>
+								<a href=" http://www.hkalla.co.id/home.php" target="_blank"><img src="/imgs/files/dealer_link/kalla.png" width="177" height="70" /></a>
+							</center>
+							<br /><br />
+							<div style="text-align: center;">
+								<h2><a target='_blank' href="http://www.hkalla.co.id/home.php"><span style="color: #000000;">Profil</span></a></h2>
+							</div> <br /><br />
 						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 mt50mobile">
-	<div class="side-widget">
-		<h5 class="title-widget">Profil</h5>
-		<div class="profil-side-widget">
-			<div class="img-profil-sw">
-				<img src="http://toyota-sukabumi.com/sdirmember/20343/fotoprofil/7q8fg.jpg" alt="Okky Triansyah W">
-			</div>
-			<div class="detail-profil-sw">
-				<h6 class="owner-profil-sw">Okky Triansyah W</h6>
-				<div class="info-detail-sw">
-					<i class="fa fa-phone"></i>
-					<p>085720049380 / 081319360680</p>
-				</div>
-								<div class="info-detail-sw">
-					<i class="bbimage"></i>
-					<p>52b83203</p>
-				</div>
-												<div class="info-detail-sw">
-					<i class="whatsappimage"></i>
-					<p>085720049380</p>
-				</div>
-												<div class="info-detail-sw">
-					<i class="fa fa-envelope"></i>
-					<p>info@toyota-sukabumi.com</p>
-				</div>
+					</li>
+					<li>
+						<div class="box_dealer_link">
+							<center>
+								<a href="http://agungtoyota.co.id/" target="_blank"><img src="/imgs/files/dealer_link/agung-toyota 2.png" width="177" height="70" /></a>
+							</center>
+							<br /><br />
+							<div style="text-align: center;">
+								<h2><a target='_blank' href="http://agungtoyota.co.id/pages/Tentang_Agung_Toyota/Tentang_Agung_Toyota"><span style="color: #000000;">Profil</span></a><br /><br /></h2>
 							</div>
+							<div style="text-align: center;">
+								<h2><a target='_blank' href="http://agungtoyota.co.id/dealers/dealer"><span style="color: #000000;">Dealer</span></a><br /><br /></h2>
+								<h2><a target='_blank' href="http://agungtoyota.co.id/magazines"><span style="color: #000000;">e-Magazine</span></a></h2>
+								<h2> </h2>
+							</div> <br /><br />
+						</div>
+					</li>
+					<li>
+						<div class="box_dealer_link">
+							<center>
+								<a href="http://auto2000.co.id/" target="_blank"><img src="/imgs/files/dealer_link/auto-2000 2.png" width="177" height="70" /></a>
+							</center>
+							<br /><br />
+							<div style="text-align: center;">
+								<h2><a target='_blank' href="http://auto2000.co.id/page/sekilas_auto2000"><span style="color: #000000;">Profil</span></a><br /><br /></h2>
+							</div>
+							<div style="text-align: center;">
+								<h2><a target='_blank' href="http://auto2000.co.id/jaringan/"><span style="color: #000000;">Dealer</span></a><br /><br /></h2>
+								<h2><a target='_blank' href="http://auto2000.co.id/category/autocom/"><span style="color: #000000;">e-Magazine</span></a></h2>
+							</div> <br /><br />
+						</div>
+					</li>
+					<li>
+						<div class="box_dealer_link">
+							<center>
+								<a href="http://nasmoco.co.id" target="_blank"><img src="/imgs/files/dealer_link/nasmoco.png" width="177" height="70" /></a>
+							</center>
+							<br /><br />
+							<div style="text-align: center;">
+								<h2><a target='_blank' href="http://nasmoco.co.id/company-profile/"><span style="color: #000000;">Profil</span></a><br /><br /></h2>
+							</div>
+							<div style="text-align: center;">
+								<h2><a target='_blank' href="http://nasmoco.co.id/info-perusahaan/branch/"><span style="color: #000000;">Dealer</span></a><br /><br /></h2>
+								<h2><a target='_blank' href="http://nasmoco.co.id/nasmoco-club/"><span style="color: #000000;">Nasmoco Club<br /><br /></span></a></h2>
+								<h2><a target='_blank' href="http://nasmoco.co.id/car/program-penjualan/"><span style="color: #000000;">Program</span></a></h2>
+							</div> <br /><br />
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<div class="side-widget">
-		<h5 class="title-widget">Subscribe</h5>
-		<div class="subscribe-side-widget">
-			<form method="post" action="http://toyota-sukabumi.com/subscriber">
-				<input type="hidden" name="iddomain" value="20352">
-				<input name="email" type="email" class="form-control" placeholder='Masukan Email Anda' required/>
-				<button class="btn btn-primary" value="Go" type="submit"><i class="fa fa-envelope"></i></button>
-			</form>
-		</div>
-	</div>
-	<div class="side-widget">
-		<h5 class="title-widget">Kategori</h5>
-		<div class="catarc-side-widget">
-						<a href="http://toyota-sukabumi.com/artikel/news">News</a>
-						<a href="http://toyota-sukabumi.com/artikel/press-release">Press Release</a>
-						<a href="http://toyota-sukabumi.com/artikel/komunitas">Komunitas</a>
-						<a href="http://toyota-sukabumi.com/artikel/tips">Tips</a>
-						<a href="http://toyota-sukabumi.com/artikel/life-style">Life Style</a>
-						<a href="http://toyota-sukabumi.com/artikel/tekhnologi">Tekhnologi</a>
-						<a href="http://toyota-sukabumi.com/artikel/travelling">Travelling</a>
-						<a href="http://toyota-sukabumi.com/artikel/kuliner">Kuliner</a>
-						<a href="http://toyota-sukabumi.com/artikel/best-moment-">Best Moment</a>
-						<a href="http://toyota-sukabumi.com/artikel/fotografi">Fotografi</a>
-						<a href="http://toyota-sukabumi.com/artikel/promo">Promo</a>
+		<div class="copy">
+			<div class="copy_box">
+				Copyright. 2013. Toyota Astra Motor.
+				<div class="footer_link">
+					<a href="/legal-cookie/" title="">Legal Cookie</a>
+					<a href="/policy/" title="">Policy</a>
+					<a href="/shopping-tools/contact-us/" title="">Contact us</a>
+				</div>
+				<div class="sosmed">
+					<span class="follow_us">Follow us on</span>
+					<div class="sosmed_link">
+						<a href="https://www.facebook.com/ToyotaID" target="_blank" title=""><img src="/imgs/layout/ic_fb.jpg" alt="" class="siluet" width="28" height="26" /><img src="/imgs/layout/ic_fb_hover.jpg" alt="" width="28" height="26" /></a>
+						<a href="https://twitter.com/ToyotaID" target="_blank" title=""><img src="/imgs/layout/ic_twitter.jpg" alt="" class="siluet" width="28" height="26" /><img src="/imgs/layout/ic_twitter_hover.jpg" alt="" width="28" height="26" /></a>
+						<a href="http://www.youtube.com/toyotaindonesia" target="_blank" title=""><img src="/imgs/layout/ic_youtube.jpg" alt="" class="siluet" width="28" height="26" /><img src="/imgs/layout/ic_youtube_hover.jpg" alt="" width="28" height="26" /></a>
+						<a href="https://instagram.com/toyotaid" target="_blank" title=""><img src="/imgs/layout/ic_instagram.png" alt="" class="siluet" width="28" height="26" /><img src="/imgs/layout/ic_instagram_hover.png" alt="" width="28" height="26" /></a>
+						<a href="" target="_blank" title=""><img src="/imgs/layout/ic_gplus.png" alt="" class="siluet" width="28" height="26" /><img src="/imgs/layout/ic_gplus_hover.png" alt="" width="28" height="26" /></a>
+						<a href="/rss/" target="_blank" title=""><img src="/imgs/layout/ic_rss.jpg" alt="" class="siluet" width="26" height="26" /><img src="/imgs/layout/ic_rss_hover.jpg" alt="" title="" width="26" height="26" /></a>
+						<a href="https://plus.google.com/100729705920079886584" rel="publisher" style="width:0px;margin-left:0px;text-indent:-9999px;" target="_blank">Find us on Google+</a>
 					</div>
-	</div>
-	<div class="side-widget">
-		<h5 class="title-widget">Artikel Populer</h5>
-		<div class="poparc-side-widget">
-						<div class="list-article-sw">
-				<img src="http://toyota-sukabumi.com/sdirmember/20343/produk/pj4qj.jpg" alt="Delivery Toyota Calya 23-12-2016">
-				<div class="info-article-sw">
-					<h6>Jum'at, 23 Desember 2016</h6>
-					<a href="http://toyota-sukabumi.com/delivery-toyota-calya-23-12-2016-detail-40500.html" title="Delivery Toyota Calya 23-12-2016">Delivery Toyota Calya 23-12-2016</a>
 				</div>
 			</div>
-						<div class="list-article-sw">
-				<img src="http://toyota-sukabumi.com/sdirmember/20343/produk/rrjt2.jpg" alt="DELIVERY AVANZA G MT 17-12-2016">
-				<div class="info-article-sw">
-					<h6>Sabtu, 17 Desember 2016</h6>
-					<a href="http://toyota-sukabumi.com/delivery-avanza-g-mt-17-12-2016-detail-39902.html" title="DELIVERY AVANZA G MT 17-12-2016">DELIVERY AVANZA G MT 17-12-2016</a>
-				</div>
-			</div>
-						<div class="list-article-sw">
-				<img src="http://toyota-sukabumi.com/sdirmember/20343/produk/48gfq.jpg" alt="DELIVERY RUSH TRD 17-12-2016">
-				<div class="info-article-sw">
-					<h6>Sabtu, 17 Desember 2016</h6>
-					<a href="http://toyota-sukabumi.com/delivery-rush-trd-17-12-2016-detail-39899.html" title="DELIVERY RUSH TRD 17-12-2016">DELIVERY RUSH TRD 17-12-2016</a>
-				</div>
-			</div>
-						<div class="list-article-sw">
-				<img src="http://toyota-sukabumi.com/sdirmember/20343/produk/t5hhp.jpg" alt="Delivery Calya 17-11-2016">
-				<div class="info-article-sw">
-					<h6>Kamis, 15 Desember 2016</h6>
-					<a href="http://toyota-sukabumi.com/delivery-calya-17-11-2016-detail-39640.html" title="Delivery Calya 17-11-2016">Delivery Calya 17-11-2016</a>
-				</div>
-			</div>
-						<div class="list-article-sw">
-				<img src="http://toyota-sukabumi.com/sdirmember/20343/produk/fkxkt.jpg" alt="Delivery Avanza 03-11-16">
-				<div class="info-article-sw">
-					<h6>Kamis, 03 November 2016</h6>
-					<a href="http://toyota-sukabumi.com/delivery-avanza-03-11-16-detail-38015.html" title="Delivery Avanza 03-11-16">Delivery Avanza 03-11-16</a>
-				</div>
-			</div>
-					</div>
-	</div>
-		<div class="side-widget">
-		<h5 class="title-widget">Video</h5>
-		<div class="video-side-widget">
-			<div class="video-sw">
-				<img src="./template/agency6/img/0.jpg">
-				<div class="title-video-sw">
-					Yaris Heykers
-				</div>
-				<div class="icon-video-sw">
-					<a onclick="showvideo('https://youtube.com/embed/nnpOMVoK6FE');" href="javascript:;" class="media-icon1"><i class="fa fa-video-camera"></i> <span>Play</span></a>
-				</div>
+			<div class="sublink">
+				<ul>
+					<li><a href="http://www.toyotaindonesiamanufacturing.co.id/">TOYOTA - MANUFACTURING</a></li>
+					<li><a href="http://www.toyota-global.com/">TOYOTA GLOBAL</a></li>
+					<li><a href="http://www.toyotahousing-id.com/">TOYOTA HOUSING INDONESIA</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
-			<div class="side-widget">
-		<h5 class="title-widget">Event Terdekat</h5>
-		<div class="event-side-widget">
-						<div class="noevent-sw">Tidak Ada Event Terdekat</div>
-					</div>
-	</div>
-										<div class="side-widget">
-		<div class="banads-side-widget">
-			<a href="http://toyota-sukabumi.webpraktis.com/halaman/jasa-service-mobil" target="_blank">
-				<img src="http://toyota-sukabumi.com/sdirmember/20343/slider/8d5jw.jpg" alt="">
-			</a>
-		</div>
-	</div>
-		</div>				</div>
-			</div>
-		</div>
-        <!-- Start footer -->
-        <footer>
-			            <div class="footer-top">
-                <div class="container">
-															<div class="row">
-																		 <div class="col-xs-12 col-sm-3 col-md-3">
-                            <div class="widget_footer">
-                               <h3> Kontak Kami </h3>
-                               <div class="widget_content aboutfooter">
-									<div class="short-icon-text">
-										<i class="fa fa-location-arrow"></i>
-										<span>SELAMAT TOYOTA SUKABUMI Jl. KH. Ahmad Sanusi No. 111 Sukabumi 43135, Jawa Barat | Sales Consultant : Okky Triansyah Winarya. SE</span>
-									</div>
-									<div class="short-icon-text">
-										<i class="fa fa-phone"></i>
-										<span>085720049380 / 081319360680</span>
-									</div>
-																		<div class="short-icon-text">
-										<i class="bbm"><img src="./template/agency6/img/bbm-image.png"></i>
-										<span>52b83203</span>
-									</div>
-																											<div class="short-icon-text">
-										<i class="wa"><img src="./template/agency6/img/whatsapp-image.png"></i>
-										<span>085720049380</span>
-									</div>
-																											<div class="short-icon-text">
-										<i class="fa fa-envelope"></i>
-										<span>info@toyota-sukabumi.com</span>
-									</div>
-																	</div>
-                            </div>
-                        </div>
-
-
-
-																																				<div class="col-xs-12 col-sm-3 col-md-3">
-                            <div class="widget_footer">
-                               <h3> Facebook </h3>
-                               <div class="widget_content">
-									<div id="fb-root"></div>
-
-									<script>(function(d, s, id) {
-									var js, fjs = d.getElementsByTagName(s)[0];
-									if (d.getElementById(id)) return;
-									js = d.createElement(s); js.id = id;
-									js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=427086683989802";
-									fjs.parentNode.insertBefore(js, fjs);
-									}(document, 'script', 'facebook-jssdk'));</script>
-
-									<div id="likebox" data-fb="https://www.facebook.com/ToyotaID/"></div>
-								</div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-												<div class="col-xs-12 col-sm-3 col-md-3">
-                            <div class="widget_footer">
-                               <h3> DEALER SELAMAT TOYOTA SUKABUMI </h3>
-                               <div class="widget_content">
-
-									<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyCj_Y-zG5wcK9BPssSZViMbcvXKf3Cvl98"></script>
-									<div>
-									<div id="gmap_canvas" class="gmaps"></div>
-									<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-									</div>
-									<script type="text/javascript">
-									function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(-6.914018,106.9055178),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-6.914018,106.9055178)});infowindow = new google.maps.InfoWindow({content:"Selamat Toyota Sukabumi, Jalan KH. Ahmad Sanusi, Sukakarya, Kota Sukabumi, Jawa Barat, Indonesia" });google.maps.event.addListener(marker, "click", function(){location.href='https://www.google.co.id/maps/place/SELAMAT+TOYOTA/@-6.914018,106.9050106,177m/data=!3m1!1e3!4m5!3m4!1s0x0:0xe6226a89a95be9c7!8m2!3d-6.9140108!4d106.9055178';infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
-									</script>
-
-								</div>
-                            </div>
-                        </div>
-
-
-
-																		                    </div>
-										                </div>
-            </div>
-			            <div class="footer-copy-right">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <div class="copyright-text">
-                                <p class="textcenter">Copyright &copy; 2016. All rights reserved.  | <a href="http://toyota-sukabumi.com/sitemap" class="colorwhite">sitemap</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- End footer -->
- 		<!-- jquery-1.11.3.min js
-		============================================ -->
-        <script src="./template/agency6/js/vendor/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="/librari/js/fblikebox.js"></script>
-
- 		<!-- bootstrap js
-		============================================ -->
-        <script src="./template/agency6/js/bootstrap.min.js"></script>
-
-        <!-- jQuery REVOLUTION Slider  -->
-        <script  src="./template/agency6/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-        <script  src="./template/agency6/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-        <script  src="./template/agency6/rs-plugin/js/rs.home.js"></script>
-
-   		<!-- owl.carousel.min js
-		============================================ -->
-        <script src="./template/agency6/js/owl.carousel.min.js"></script>
-
-        <!-- jquery.sidr.min js
-        ============================================ -->
-        <script src="./template/agency6/js/jquery.sidr.min.js"></script>
-
-        <!-- jqueryui js
-        ============================================ -->
-        <script src="./template/agency6/js/jquery.fancybox.js"></script>
-
-        <!-- jflickrfeed.min js
-        ============================================ -->
-        <script src="./template/agency6/js/jflickrfeed.min.js"></script>
-
-        <!-- jquery.mixitup.min js
-        ============================================ -->
-        <script src="./template/agency6/js/jquery.mixitup.min.js"></script>
-
-        <!-- jquery scrollUp min js
-        ============================================ -->
-        <script src="./template/agency6/js/jquery.scrollUp.min.js"></script>
-
-		<!-- counterup min js
-        ============================================ -->
-		<script src="./template/agency6/js/counterup.min.js"></script>
-
-		 <!-- jquery.collapes js
-        ============================================ -->
-        <script src="./template/agency6/js/jquery.collapes.js"></script>
-
-
-		<!-- waypoints min js
-        ============================================ -->
-		<script src="./template/agency6/js/waypoints.min.js"></script>
-
-   		<!-- wow js
-		============================================ -->
-        <script src="./template/agency6/js/wow.js"></script>
-
-   		<!-- particles js
-		============================================ -->
-        <script src="./template/agency6/js/particles.js"></script>
-
-   		<!-- plugins js
-		============================================ -->
-        <script src="./template/agency6/js/plugins.js"></script>
-
-   		<!-- main js
-		============================================ -->
-        <script src="./template/agency6/js/main.js"></script>
-
-        <script>
-			$(document).ready(function($){
-			$(".hassubmenu > a").click(function(){
-				if($(this).next(".submenu").hasClass("open")){
-					$("#listmenuopen > li > ul").not($(this).next(".submenu").slideUp(300));
-					$(this).next(".submenu").removeClass("open");
-					$(this).removeClass("activemenu");
-				}else{
-					$("#listmenuopen > li > ul").not($(this).next(".submenu").slideDown(250));
-					$(this).next(".submenu").addClass("open");
-					$(this).addClass("activemenu");
+	<!-- end .footer -->
+	<div class="bg_car_submenu" id="bg_car_submenu"></div>
+	<script src="/layout/script/jquery.easing.1.3.js" defer></script>
+	<script type="text/javascript" src="/layout/script/highlight/slider-plugin.js" defer></script>
+	<script type="text/javascript" src="/layout/script/highlight/jquery.samslider.min.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="/layout/script/highlight/css/style.css" media="screen" />
+	<script src="/layout/script/jquery.hoverIntent.minified.js" defer></script>
+	<script type="text/javascript" src="/layout/script/fancybox/jquery.fancybox.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="/layout/script/fancybox/jquery.fancybox.css" media="screen" />
+	<script src="/layout/script/jquery.jcarousel.min.js" defer></script>
+	<script src="/layout/script/carousel/jquery.carouFredSel-6.2.0-packed.js" defer></script>
+	<script src="/layout/script/jquery.mousewheel.min.js" defer></script>
+	<script type="text/javascript" src="/layout/script/cycle/jquery.cycle.all.2.74.js" defer></script>
+	<script type="text/javascript" src="/layout/script/jquery.scrollTo-1.4.2-min.js" defer></script>
+	<script type="text/javascript" src="/layout/script/waypoints.min.js" defer></script>
+	<link href="/layout/script/prettyPhoto/css/prettyPhoto.css" rel="stylesheet" />
+	<script type="text/javascript" src="/layout/script/prettyPhoto/js/jquery.prettyPhoto.js" defer></script>
+	<!--<script src="/layout/script/imageCache.js" type="text/javascript" defer></script>-->
+	<script type="text/javascript">
+		var imageCache = new function() {
+			var me = this;
+			var cache = [];
+			var root = document.location.href.split('/');
+			root.pop();
+			root = root.join('/') + '/';
+			me.push = function(src, loadEvent) {
+				if (!src.match(/^http/)) {
+					src = root + src;
 				}
-			}
-			);
-		});
-
-		$(document).ready(function($){
-			$(".haschild > a").click(function(){
-				if($(this).next("ul").hasClass("open")){
-					$(".haschild ul").not($(this).next("ul").slideUp(300));
-					$(this).next("ul").removeClass("open");
-					$(this).removeClass("activemenu");
-				}else{
-					$(".haschild ul").not($(this).next("ul").slideDown(250));
-					$(this).next("ul").addClass("open");
-					$(this).addClass("activemenu");
-				}
-			}
-			);
-		});
-        /*=========================
-         stickyNavTop
-        ===========================*/
-          var stickyNavTop = $('.main-menu').offset().top;
-
-          var stickyNav = function(){
-          var scrollTop = $(window).scrollTop();
-
-          if (scrollTop > stickyNavTop) {
-              $('.main-menu').addClass('sticky');
-          } else {
-              $('.main-menu').removeClass('sticky');
-          }
-          };
-
-          stickyNav();
-
-          $(window).scroll(function() {
-              stickyNav();
-          });
-        </script>
-
-
-		<!-- Calendar Event -->
-		<script src='/librari/calendar/moment.min.js'></script>
-		<script src='/librari/calendar/fullcalendar.min.js'></script>
-
-
-		<script>
-
-			$(document).ready(function() {
-				$(".subkategori > a").click(function(){
-					if($(this).next("ul").hasClass("open")){
-						$(".haschild ul").not($(this).next("ul").slideUp(300));
-						$(this).next("ul").removeClass("open");
-						$(this).removeClass("activemenu");
-					}else{
-						$(".haschild ul").not($(this).next("ul").slideDown(250));
-						$(this).next("ul").addClass("open");
-						$(this).addClass("activemenu");
+				var item = new Image();
+				if (cache[src] && loadEvent) {
+					loadEvent(src);
+				} else {
+					if (loadEvent) {
+						item.onload = loadEvent;
+						item.onerror = loadEvent;
 					}
-				});
-
-				$('#calendar').fullCalendar({
-					header: {
-						left: 'prev,next today',
-						center: 'title',
-						right: ''
-					},
-					defaultDate: $("nowdate"),
-					editable: true,
-					eventLimit: true, // allow "more" link when too many events
-					events: [
-
-
-
-					]
-				});
-
-			});
-
-		</script>
-
-
-		<!-- *********************** End Javascript Files *********************** -->
-		<!-- ******************************************************************** -->
-
-
-			<script>
-				$(document).ready(function($){
-				$(".player_audio")[0].loop = true;
-				$(".player_audio")[0].play();
-
-				$('.musik').click(function() {
-				  if ($(".player_audio")[0].paused == false) {
-					  $(".player_audio")[0].pause();
-					  $(".musik").html('<img src="http://toyota-sukabumi.com/librari/icon/play.png" />');
-				  } else {
-					  $(".player_audio")[0].play();
-					  $(".musik").html('<img src="http://toyota-sukabumi.com/librari/icon/pause.png" />');
-				  }
-				});
-			  });
-			</script>
-
-			<link href="http://toyota-sukabumi.com/librari/musikbackground.css" rel="stylesheet" type="text/css">
-			<div class="musikback">
-				<span class="musik">
-					<img src="http://toyota-sukabumi.com/librari/icon/pause.png" />
-				</span>
-				<audio class='player_audio' src='http://toyota-sukabumi.com/sdirmember/20343/music/vb4bc.mp3'></audio>
-			</div>
-
-			<style>
-				#videomodal iframe{
-					width:100%
+					cache[src] = item;
 				}
-			</style>
-
-		<!-- Modal Video -->
-		<div class="modal fade" id="videomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog" role="document" style="max-width:600px;">
-				<div class="modal-content">
-					<button type="button" class="close closepop" onclick="closevideo()" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-					<div class="modal-body videocontent" style="padding:0;">
-						&nbsp;
-					</div>
-				</div>
-			</div>
-		</div>
-
-			<script>
-					function showvideo(urlshow){
-						$(".videocontent").html('<iframe width="560" height="450" src="'+urlshow+'" frameborder="0" allowfullscreen></iframe>');
-						$("#videomodal").modal("show");
-					}
-					$('#videomodal').on('hidden.bs.modal', function (e) {
-						$(".videocontent").html('');
+				item.src = src;
+			}
+			me.pushArray = function(array, imageLoadEvent, imagesLoadEvent) {
+				var numLoaded = 0;
+				var arrayLength = array.length;
+				for (var i = 0; i < arrayLength; i++) {
+					me.push(array[i], function(e) {
+						if (imageLoadEvent) {
+							imageLoadEvent(e);
+						}
+						numLoaded++;
+						if (numLoaded == arrayLength) {
+							setTimeout(function() {
+								imagesLoadEvent(e);
+							}, 1)
+						}
 					})
-			</script>
+				}
+			}
+		}
+	</script>
+	<script language="javascript">
+		$(document).ready(function() {
+			var shopping_box = $('.btn_shopping_tools_box').height();
+			$('.panel_body').height(shopping_box - 20);
+			$('.backtotop_box').css('top', "-" + (($(window).height() / 2) - (shopping_box / 2) - 100) + "px");
+			fly_for_panelsub();
+			scroll_waypoint();
+		});
+	</script>
+	<!--<script src="/layout/script/google_analytics.js" type="text/javascript" defer></script>-->
+	<script type="text/javascript">
+		var gid = {
+			samprogress: 'UA-38253472-1',
+			livebeta: 'UA-38617426-1'
+		};
+		var activeid = gid.livebeta;
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', activeid]);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
 
-				<script type="text/javascript" src="/librari/showdropdown.js"></script>
+		function set_google_analytics() {
+			_gaq.push(['_trackPageview', window.location.pathname + window.location.search + window.location.hash]);
+		}
+	</script>
+	<script src="/layout/script/jquery.wookmark.js" defer></script>
+	<script src="/layout/script/toyota.js" defer></script>
+	<script src="/layout/script/toyota_init.js" defer></script>
+	<script src="/layout/script/toyota_improvment.js" defer></script>
+	<!--<link href="/layout/script/jqsearch/style.css" rel="stylesheet" />-->
+	<style type="text/css">
+		/* COMMON CLASSES */
 
-			<!--Start of Zopim Live Chat Script-->
-			<script type="text/javascript">
-			window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-			d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-			_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-			$.src="//v2.zopim.com/?";z.t=+new Date;$.
-			type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-			</script>
-			<!--End of Zopim Live Chat Script-->
+		.break {
+			clear: both;
+		}
 
-					</body>
+		#suggestions {
+			position: absolute;
+			top: 23px;
+			left: -120px;
+			width: 290px;
+			z-index: 999999;
+			background: #fff;
+			padding: 5px;
+			display: none;
+		}
+		/* SEARCHRESULTS */
+
+		#searchresults {
+			border-width: 1px;
+			border-color: #919191;
+			border-style: solid;
+			width: 278px;
+			padding: 5px;
+			font-size: 10px;
+			line-height: 14px;
+			font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+		}
+
+		#searchresults a {
+			display: block;
+			clear: left;
+			text-decoration: none;
+			color: #555555;
+			font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+		}
+
+		#searchresults a:hover {
+			background-color: #C0C0C0;
+			color: #555555;
+			font-family: "Arial", Verdana, sans-serif;
+			color: #ffffff;
+		}
+
+		#searchresults a img {
+			float: left;
+			padding: 5px 10px;
+		}
+
+		#searchresults ul {
+			list-style-type: none;
+		}
+
+		#searchresults ul li {
+			margin-bottom: 5px;
+		}
+
+		#searchresults ul li a p {
+			padding: 3px;
+		}
+	</style>
+	<script src="/layout/script/viewport_load.js" type="text/javascript" defer></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".thumb_img_detail_menu").hover(
+				function() {
+					var img_url = $(this).attr("rel");
+					$(this).parent().find(".img_detail_menu").attr('src', img_url);
+				},
+				function() {}
+			)
+			run_viewport();
+			$('input#form-search').focus(function() {
+				$('input#form-search').keyup(function() {
+					inputString = $(this).val();
+					if (inputString.length == 0) {
+						$('#suggestions').fadeOut(); // Hide the suggestions box
+					} else {
+						$.post("/listSearch/", {
+							queryString: "" + inputString + ""
+						}, function(data) { // Do an AJAX call
+							$('#suggestions').fadeIn(); // Show the suggestions box
+							$('#suggestions').html(data); // Fill the suggestions box
+						});
+					}
+				});
+			});
+			$("input#form-search").blur(function() {
+				$('#suggestions').fadeOut();
+			});
+		});
+	</script>
+	<script src="/layout/script/LAB.min.js" type="text/javascript" defer></script>
+
+	<!-- begin olark code -->
+	<script data-cfasync="false" type='text/javascript'>
+		/*<![CDATA[*/
+		window.olark || (function(c) {
+			var f = window,
+				d = document,
+				l = f.location.protocol == "https:" ? "https:" : "http:",
+				z = c.name,
+				r = "load";
+			var nt = function() {
+				f[z] = function() {
+					(a.s = a.s || []).push(arguments)
+				};
+				var a = f[z]._ = {},
+					q = c.methods.length;
+				while (q--) {
+					(function(n) {
+						f[z][n] = function() {
+							f[z]("call", n, arguments)
+						}
+					})(c.methods[q])
+				}
+				a.l = c.loader;
+				a.i = nt;
+				a.p = {
+					0: +new Date
+				};
+				a.P = function(u) {
+					a.p[u] = new Date - a.p[0]
+				};
+
+				function s() {
+					a.P(r);
+					f[z](r)
+				}
+				f.addEventListener ? f.addEventListener(r, s, false) : f.attachEvent("on" + r, s);
+				var ld = function() {
+					function p(hd) {
+						hd = "head";
+						return ["<", hd, "></", hd, "><", i, ' onl' + 'oad="var d=', g, ";d.getElementsByTagName('head')[0].", j, "(d.", h, "('script')).", k, "='", l, "//", a.l, "'", '"', "></", i, ">"].join("")
+					}
+					var i = "body",
+						m = d[i];
+					if (!m) {
+						return setTimeout(ld, 100)
+					}
+					a.P(1);
+					var j = "appendChild",
+						h = "createElement",
+						k = "src",
+						n = d[h]("div"),
+						v = n[j](d[h](z)),
+						b = d[h]("iframe"),
+						g = "document",
+						e = "domain",
+						o;
+					n.style.display = "none";
+					m.insertBefore(n, m.firstChild).id = z;
+					b.frameBorder = "0";
+					b.id = z + "-loader";
+					if (/MSIE[ ]+6/.test(navigator.userAgent)) {
+						b.src = "javascript:false"
+					}
+					b.allowTransparency = "true";
+					v[j](b);
+					try {
+						b.contentWindow[g].open()
+					} catch (w) {
+						c[e] = d[e];
+						o = "javascript:var d=" + g + ".open();d.domain='" + d.domain + "';";
+						b[k] = o + "void(0);"
+					}
+					try {
+						var t = b.contentWindow[g];
+						t.write(p());
+						t.close()
+					} catch (x) {
+						b[k] = o + 'd.write("' + p().replace(/"/g, String.fromCharCode(92) + '"') + '");d.close();'
+					}
+					a.P(2)
+				};
+				ld()
+			};
+			nt()
+		})({
+			loader: "static.olark.com/jsclient/loader0.js",
+			name: "olark",
+			methods: ["configure", "extend", "declare", "identify"]
+		});
+		/* custom configuration goes here (www.olark.com/documentation) */
+		olark.identify('9317-431-10-2706'); /*]]>*/
+	</script><noscript><a href="https://www.olark.com/site/9317-431-10-2706/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+	<!-- end olark code -->
+</body>
+
 </html>
